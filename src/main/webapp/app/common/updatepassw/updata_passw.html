@@ -1,0 +1,32 @@
+<div class="pop changePsw ng-hide" ng-show="showPasswordDiv" style="z-index: 130;">
+    <div class="phed5">
+        <div class="phTit font15">修改密码</div>
+        <a href="javascript:;" class="closeBtn closeBtn1" ng-click="showPassword(false)"></a>
+    </div>
+    <div class="userPcont pswCont">
+        <ul class="userPlis">
+            <li>
+                <span class="userLable">原密码：</span>
+                <div class="userPut">
+                    <input type="password" class="userPutsty ng-pristine ng-untouched ng-valid" placeholder="请输入原密码" style="color: #0a0e14" ng-model="passWordObj.oldPassWord">
+                </div>
+            </li>
+            <li>
+                <span class="userLable">新密码：</span>
+                <div class="userPut">
+                    <input type="password" class="userPutsty ng-pristine ng-untouched ng-valid" placeholder="请输入新密码" style="color: #0a0e14" ng-model="passWordObj.newPassWord">
+                </div>
+            </li>
+            <li>
+                <span class="userLable">确认密码：</span>
+                <div class="userPut">
+                    <input type="password" class="userPutsty ng-pristine ng-untouched ng-valid" placeholder="请输入新密码" style="color: #0a0e14" ng-model="passWordObj.againPassWord">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="pbtom3">
+        <a href="javascript:;" class="pBtn1Small marig8" ng-click="updatePassword()">保存</a>
+        <a href="javascript:;" class="pBtn2Small marig12" ng-click="showPassword(false)">取消</a>
+    </div>
+</div>

@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>镇江绿色交通综合管理服务平台</title>
+    <link type="text/css" href="resources/css/guide.css" rel="stylesheet">
+
+    <!--第三方脚本引入-->
+    <script type="text/javascript" src="lib/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+
+    <script type="text/javascript" src="welcome.js"></script>
+</head>
+<body ng-app="app" ng-controller="welcomeCtrl">
+<div class="guide">
+    <div class="g_logo"></div>
+    <div class="g_home" ng-click="loginOut()" style="z-index: 999"></div>
+    <!--暂时系统设置用这个图标-->
+    <div class="g_home2" style="margin-right: 80px;z-index: 999" ><a style="  display: block;
+  width: 100%;height: 100%;" ng-click="openMenuPage('system-config')"></a></div>
+    <!--技术支持-->
+    <!--<div class="btmTxt">技术支持：南京擎天科技有限公司</div>-->
+
+
+    <!--流星-->
+    <div class="liuxing1 liuxingFla"></div>
+    <div class="liuxing2 liuxingFla2"></div>
+    <div class="liuxing3 liuxingFla3"></div>
+
+    <!--波点-->
+    <div class="points " style="transform: translate(-9px, -63px);"></div>
+
+    <!--地图点移动层-->
+    <div class="g_move">
+        <div class="gm1 pointMoveYellowFla"></div>
+        <div class="gm2 pointMoveBlueFla"></div>
+    </div>
+
+    <!--中间块-->
+    <div class="blockNav">
+        <div class="g_navs gn1 ">
+            <div class="g_navsInner moveUpFla">
+                <div class="g_navsIndata moveUpDownFla">
+                    <a ng-click="openMenuPage('monitor')"></a>
+                </div>
+            </div>
+        </div>
+        <div class="g_navs gn2 ">
+            <div class="g_navsInner moveUpFla">
+                <div class="g_navsIndata moveUpDownFla2">
+                    <a ng-click="openMenuPage('collect')"></a>
+                </div>
+            </div>
+        </div>
+        <div class="g_navs gn3 ">
+            <div class="g_navsInner moveUpFla">
+                <div class="g_navsIndata moveUpDownFla3">
+                    <a ng-click="openMenuPage('carbon')"></a>
+                </div>
+            </div>
+        </div>
+        <div class="g_navs gn4 ">
+            <div class="g_navsInner moveUpFla">
+                <div class="g_navsIndata moveUpDownFla4">
+                    <a ng-click="openMenuPage('analysis')"></a>
+                </div>
+            </div>
+        </div>
+        <div class="g_navs gn5 ">
+            <div class="g_navsInner moveUpFla">
+                <div class="g_navsIndata moveUpDownFla5">
+                    <a ng-click="openMenuPage('target')"></a>
+                </div>
+            </div>
+        </div>
+        <div class="g_navs gn6 ">
+            <div class="g_navsInner moveUpFla">
+                <div class="g_navsIndata moveUpDownFla6">
+                    <a ng-click="openMenuPage('energy')"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $('.blockNav').mousemove(function (e) {
+        var currLeft = (e.pageX / $(window).width() * 150).toFixed(0);
+        var currHei = (e.pageY / $(window).height() * 150).toFixed(0);
+        $('.points').css({'transform': 'translate(' + (-currLeft + 50) + 'px,' + (-currHei + 50) + 'px)'})
+    });
+
+</script>
+</body>
+</html>

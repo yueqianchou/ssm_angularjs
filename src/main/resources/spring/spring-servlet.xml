@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+						http://www.springframework.org/schema/tx
+						http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context-3.0.xsd
+						http://www.springframework.org/schema/mvc
+					   http://www.springframework.org/schema/mvc/spring-mvc.xsd
+					   http://www.springframework.org/schema/util
+					   http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<!--1扫描src下的源代码包   目的是通过注解的方式 依赖注入自动装配  -->
+		<context:annotation-config />
+		<context:component-scan base-package="com" />
+
+	<!--2配置数据源相当于mybatis的环境配置  -->
+		<bean name="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+			<property name="url"  value="jdbc:mysql://127.0.0.1:3306/test"/>
+			<property name="username"  value="root"/>
+			<property name="password"  value="ok"/>
+			<property name="driverClassName"  value="com.mysql.jdbc.Driver"/>
+		
+		</bean>
+	<!--3配置事务管理器管理数据源  -->
+		<bean name="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+			<property name="dataSource"  ref="dataSource"/>
+		
+		</bean>	
+	<!--4以注解的方式驱动事务管理器  -->
+		<tx:annotation-driven transaction-manager="transactionManager"/>
+	<!--5配置视图解析器  -->
+		<bean name="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+			<property name="prefix"  value="/WEB-INF/"/>
+			<property name="suffix"  value=".html"/>
+		
+		</bean>	
+	<!--6配置sqlSessionFactory相当于Mybatis的session会话工厂  -->
+		<bean name="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+			<property name="dataSource"  ref="dataSource"/>
+		
+		</bean>	
+	<!--7扫描dao接口和crud所在的xml  -->
+		<bean name="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+			<property name="basePackage"  value="com.dao"/>
+		
+		</bean>	
+	<!--8如果有文件上传配置文件上传  -->
+		<bean name="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+			<property name="maxUploadSize"  value="500000"/>
+		
+		</bean>
+
+
+	<!-- MVC Jackson转换器 -->
+	<mvc:annotation-driven>
+		<mvc:message-converters>
+			<ref bean="fastJsonHttpMessageConverter" />
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+
+	<!-- JSON转换 -->
+	<bean id="fastJsonHttpMessageConverter" class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
+		<property name="supportedMediaTypes">
+			<list>
+				<value>application/json;charset=UTF-8</value>
+				<value>text/html;charset=UTF-8</value>
+				<value>application/x-www-form-urlencoded; charset=UTF-8</value>
+			</list>
+		</property>
+		<property name="features">
+			<util:list>
+				<value>WriteDateUseDateFormat</value>
+				<value>WriteNullBooleanAsFalse</value>
+				<value>WriteNullStringAsEmpty</value>
+				<value>WriteNullListAsEmpty</value>
+				<value>DisableCircularReferenceDetect</value>
+			</util:list>
+		</property>
+	</bean>
+
+	<!--ftl转doc-->
+	<bean  id="freeMarkerConfigurer" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<property name="templateLoaderPath" value="classpath:file/ftl"></property>
+		<property name="freemarkerSettings">
+			<props>
+				<prop key="default_encoding">UTF-8</prop>
+				<prop key="locale">zh_CN</prop>
+				<prop key="number_format">0.##########</prop>
+				<prop key="template_update_delay">5</prop>
+				<prop key="url_escaping_charset">UTF-8</prop>
+				<prop key="boolean_format">true,false</prop>
+				<prop key="datetime_format">yyyy-MM-dd HH:mm:ss</prop>
+				<prop key="date_format">yyyy-MM-dd</prop>
+				<prop key="time_format">HH:mm:ss</prop>
+				<prop key="whitespace_stripping">true</prop>
+			</props>
+
+		</property>
+
+	</bean>
+
+</beans>

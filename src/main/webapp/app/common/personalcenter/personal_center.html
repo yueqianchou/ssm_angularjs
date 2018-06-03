@@ -1,0 +1,49 @@
+<div class="pop personalPop" style="z-index: 130;">
+    <div class="phed5">
+        <div class="phTit font15">个人中心</div>
+        <a href="javascript:;" class="closeBtn closeBtn1" ng-click="closeUserInfo()"></a>
+    </div>
+    <div class="userPcont pswCont" id="updateUserInfoDiv">
+        <ul class="userPlis">
+            <li>
+                <span class="userLable">用户名：</span>
+
+                <div class="userPut">
+                    <input type="text" class="userPutsty ng-pristine ng-untouched ng-valid" placeholder="请输入用户名" ng-model="c_login_name" disabled="disabled">
+                </div>
+            </li>
+            <li>
+                <span class="userLable">联系人：</span>
+
+                <div class="userPut">
+                    <input type="text" class="userPutsty ng-pristine ng-untouched ng-valid" style="color: #0a0e14" placeholder="请输入联系人" ng-model="userInfo.contact">
+                </div>
+            </li>
+            <li>
+                <span class="userLable">固定电话：</span>
+
+                <div class="userPut">
+                    <input type="text" class="userPutsty ng-pristine ng-untouched ng-valid" style="color: #0a0e14" placeholder="请输入固定电话" ng-model="userInfo.phone">
+                </div>
+            </li>
+            <li>
+                <span class="userLable">移动电话：</span>
+
+                <div class="userPut">
+                    <input type="text" class="userPutsty ng-pristine ng-untouched ng-valid" style="color: #0a0e14" placeholder="请输入移动电话" ng-model="userInfo.telephone">
+                </div>
+            </li>
+            <li>
+                <span class="userLable">邮箱：</span>
+
+                <div class="userPut">
+                    <input type="text" class="userPutsty ng-pristine ng-untouched ng-valid" style="color: #0a0e14" placeholder="请输入邮箱" ng-model="userInfo.email">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="pbtom3">
+        <a href="javascript:;" class="pBtn1Small marig8" ng-click="updateUserInfo()">保存</a>
+        <a href="javascript:;" class="pBtn2Small marig12" ng-click="closeUserInfo()">取消</a>
+    </div>
+</div>

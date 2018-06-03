@@ -1,0 +1,360 @@
+.taskLeft {
+    width: 430px;
+    left: 20px;
+    top: 20px;
+    bottom: 20px;
+    background: #fff;
+    position: absolute;
+}
+
+.taskTit {
+    height: 60px;
+    background: #438bfb;
+}
+
+.taskTxt {
+    width: auto;
+    height: 60px;
+    display: block;
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+    line-height: 60px;
+}
+
+.taskState {
+    display: block;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.taskBtn {
+    display: block;
+    height: auto;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.taskData {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+.taskDataLis {
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #f5f7fa;
+    margin: 15px;
+    margin-bottom: 0px;
+}
+
+.tDLisTit {
+    height: 42px;
+    background: #f5f7fa;
+    overflow: hidden;
+}
+
+.tDLisTit .txt {
+    font-weight: bold;
+    font-size: 16px;
+    color: #2a3240;
+    display: block;
+    width: auto;
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    margin-left: 20px;
+}
+
+.tDLisTit .date {
+    font-size: 12px;
+    color: #8a9099;
+    display: block;
+    width: auto;
+    float: right;
+    height: 42px;
+    line-height: 42px;
+    margin-right: 20px;
+}
+
+.tDLisData {
+    display: block;
+    height: auto;
+    overflow: hidden;
+}
+
+.tDLisData li {
+    display: block;
+    height: 42px;
+    overflow: hidden;
+}
+
+.tDLisData li .txt {
+    font-size: 14px;
+    color: #5d6c85;
+    display: block;
+    width: auto;
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    margin-left: 20px;
+}
+
+.tDLisData li .date {
+    font-size: 14px;
+    color: #5d6c85;
+    display: block;
+    width: auto;
+    float: right;
+    height: 42px;
+    line-height: 42px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.taskDataBtn {
+    height: 105px;
+    border-top: 1px solid #dfe0e7;
+    margin-top: 15px;
+}
+
+.tDBtnInner {
+    height: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.tDBtnInner .btn_blue {
+    display: inline-block;
+}
+
+.taskRig {
+    left: 470px;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.taskRigLis {
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.taskRigLis ul {
+    display: block;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 10px;
+}
+
+.taskRigLis.last ul {
+    bottom: 0px;
+    top: 10px;
+}
+
+.taskRigLis ul li {
+    display: block;
+    width: 32.33%;
+    float: left;
+    margin-right: 1.5%;
+    background: #fff;
+    height: 100%;
+    position: relative;
+}
+
+.taskRigLis ul li:last-child {
+    margin-right: 0;
+}
+
+.taskRigLis ul li .taskTit {
+    background: #f5f7fa;
+    border-bottom: 1px solid #ccd1d9;
+}
+
+.taskRigLis ul li .taskTxt {
+    color: #2a3240;
+}
+
+.taskDataMain {
+    height: 182px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0px;
+    margin-top: -91px;
+    overflow: hidden;
+}
+
+.tdm_tit {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #5d6c85;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.tdm_num {
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #8a8e99;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tdm_num .num {
+    font-size: 36px;
+    color: #438bfb;
+    font-weight: bold;
+    margin-right: 5px;
+    font-family: "Century Gothic";
+}
+
+.tdm_compare {
+    height: 30px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 12px;
+    color: #8a9099;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+}
+
+.tdm_compare .num {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+
+.tdm_compare .tdm_cinner {
+    height: 30px;
+    overflow: hidden;
+    display: block;
+    padding-left: 20px;
+    line-height: 30px;
+    width: 165px;
+    margin: 0 auto;
+}
+
+.tdm_compare .tdm_cinner .txt {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+
+.tdm_compare .tdm_cinner .target {
+    display: block;
+    height: 30px;
+    width: 30px;
+    float: left;
+}
+
+.tdm_compare.up .target {
+    background: url(../images/imgwq/icon_up.png) no-repeat;
+    background-position: 10px 5px;
+}
+
+.tdm_compare.down .target {
+    background: url(../images/imgwq/icon_down.png) no-repeat;
+    background-position: 10px 5px;
+}
+
+.tdm_btn {
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.tdm_bnei {
+    display: inline-block;
+}
+
+/*20171011个人中心下拉*/
+
+.inFoSlide li:hover {
+    border: 1px solid #0d65d9;
+    background: #0e3d88;
+}
+
+.uInfoUl {
+    float: left;
+    display: block;
+}
+
+.uInfoUl li {
+    float: left;
+    display: block;
+    width: 65px;
+    cursor: pointer;
+    background: url(../images/liz/setli_bg.png) no-repeat right bottom;
+    position: relative;
+    height: 56px;
+}
+
+.uInfoUl li .setTxt {
+    text-align: center;
+}
+
+.inFoSlide {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 56px;
+    left: -1px;
+    z-index: 30;
+    background: rgba(0, 15, 38, 0.7);
+    border: 1px solid #000;
+    border-radius: 3px;
+    overflow: hidden;
+    display: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.inFoSlide li {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    height: 26px;
+    margin-left: 2px;
+    margin-right: 2px;
+    line-height: 26px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 2px;
+    overflow: hidden;
+    width: auto;
+    float: none;
+    background: none;
+}
+
+.visible {
+    overflow: visible;
+}
+
+
+

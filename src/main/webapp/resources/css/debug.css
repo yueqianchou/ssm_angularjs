@@ -1,0 +1,228 @@
+/*
+    注：
+    此样式表为程序员专用，通过此样式表覆盖之前样式。不要改前端提供的样式了
+    ~_~ O(∩_∩)O谢谢!
+*/
+/** 分页 start **/
+.ovflow {
+    overflow: hidden;
+    position: absolute;
+    left: 17px;
+    right: 17px;
+    bottom: 0px;
+    height: 68px;
+}
+
+.turnpages {
+    position: absolute;
+    bottom: 17px;
+    right: 7px;
+    width: auto;
+    overflow: hidden;
+    font-size: 14px;
+}
+.page_list {
+    float: left;
+}
+.page_list li {
+    width: 32px;
+    height: 28px;
+    float: left;
+    margin-right: 7px;
+    border: solid 1px #dddddd;
+    line-height: 28px;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+}
+.page_list li:hover {
+    background: #2f7ac2;
+    color: white;
+    border: solid 1px #175ea2;
+}
+
+.page_list .more_page {
+    background: none;
+    border: none;
+    width: 24px;
+}
+.page_list .more_page:hover {
+    background: none;
+    border: none;
+    width: 24px;
+    color: inherit;
+}
+.page_btn input {
+    width: 57px;
+    height: 100%;
+    border: none;
+    background: none;
+    line-height: 28px;
+    text-indent: 8px;
+    outline: none;
+}
+.padding0 {
+    padding: 0;
+}
+
+.go.page_btn {
+    background: linear-gradient(#fdfdfd, #eaedf3);
+    font-size: 14px;
+    color: #5d6c85;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid #ccd1d9;
+}
+.page_btn {
+    float: left;
+    height: 28px;
+    padding: 0 12px;
+    line-height: 28px;
+    margin-right: 7px;
+    background: white;
+    border: solid 1px #dddddd;
+    cursor: pointer;
+}
+.page_btn:hover {
+    background: linear-gradient(#eaedf3, #fdfdfd);
+}
+.icon_prev {
+    width: 10px;
+    height: 10px;
+    background: url("../images/pagination/icon2.png");
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
+.icon_next {
+    width: 10px;
+    height: 10px;
+    background: url("../images/pagination/icon3.png");
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+.input-abcdedf-error {
+    border: 1px solid #ff0000 !important;
+}
+
+.tip-abcdedf-error{
+    color: #ff0000;
+    border: 1px solid #ccc;
+    background: white;
+    font-size: 14px;
+    font-family: 微软雅黑;
+}
+/** 分页 end **/
+
+.mic li{
+    z-index: 0;
+}
+
+/**时间输入框样式 **/
+.sysDatePickerCss {
+    width: 121px !important;
+    text-align: left !important;
+    height: 26px !important;
+    background-color: #072b66 !important;
+    font-size: 100% !important;
+    color: #ffffff !important;
+    border: 1px solid #2371c6 !important;
+    text-indent: 9px !important;
+}
+
+/**隐藏高德地图logo **/
+.amap-logo,.amap-copyright{
+    display: none !important;
+}
+
+/**隐藏百度地图logo **/
+.anchorBL{
+    display: none !important;
+}
+
+/** start 云图  地图**/
+.centerFreight{
+    width: 26px;
+    height: 37px;
+    background: url("../images/wy/cloud_ico13.png") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    z-index: 6;
+}
+
+.centerPassenger{
+    width: 26px;
+    height: 36px;
+    background: url("../images/wy/cloud_ico14.png") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    z-index: 6;
+}
+
+.centerBus{
+    width: 26px;
+    height: 36px;
+    background: url("../images/wy/cloud_ico15.png") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    z-index: 6;
+}
+
+.centerPort{
+    width: 26px;
+    height: 36px;
+    background: url("../images/wy/cloud_ico16.png") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    z-index: 6;
+}
+
+.bubbleNew {
+    position: absolute;
+    left: -21px;
+    bottom: 48px;
+    border: 1px solid #060f1c;
+    background: rgba(0, 23, 46, .8);
+    width: 68px;
+    border-radius: 1px;
+}
+
+.bubbleNew:before {
+    content: '';
+    width: 12px;
+    height: 10px;
+    background: url(../images/cloud/jiao1.png) no-repeat;
+    left: 50%;
+    margin-left: -6px;
+    bottom: -9px;
+    position: absolute;
+}
+
+.bubbleNew-top {
+    height: 26px;
+    line-height: 26px;
+    background: linear-gradient(#0f69be, #01386c);
+    border: 1px solid #336fa8;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.bubbleNew-con li {
+    border-bottom: 1px dashed #000000;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0px 8px;
+}
+
+.bubbleNew-con li:last-child {
+    border-bottom: none;
+}
+/** end 云图  地图**/

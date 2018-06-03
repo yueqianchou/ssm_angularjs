@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>镇江绿色交通综合管理服务平台.系統设置</title>
+
+    <!--美工样式-->
+    <link type="text/css" href="resources/css/layout/reset.css" rel="stylesheet">
+    <link type="text/css" href="resources/css/layout/base.css" rel="stylesheet">
+    <link type="text/css" href="resources/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link type="text/css" href="resources/css/master_wy.css" rel="stylesheet">
+    <link type="text/css" href="resources/css/master_wq.css" rel="stylesheet">
+    <link type="text/css" href="resources/css/debug.css" rel="stylesheet">
+    <link type="text/css" href="resources/css/master_sjw.css" rel="stylesheet"/>
+    <link type="text/css" href="resources/css/master_wj.css" rel="stylesheet">
+    <link type="text/css" href="resources/css/master_liz.css" rel="stylesheet"/>
+
+    <!--第三方插件脚本引入-->
+    <script type="text/javascript" src="lib/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="lib/angular-route.js"></script>
+    <!--<script src="https://cdn.bootcss.com/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>-->
+    <script type="text/javascript" src="lib/echarts/echarts.min.js"></script>
+    <script type="text/javascript" src="lib/ng-file-upload.js"></script>
+
+    <script type="text/javascript" src="../lib/perfect-scrollbar/perfect-scrollbar.jquery.js"></script>
+    <script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="lib/skyui/skyui.js"></script>
+    <script type="text/javascript" src="resources/js/layout.js"></script>
+
+    <script type="text/javascript" src="lib/highcharts/highcharts.js"></script>
+    <script type="text/javascript" src="lib/highcharts/canvg.js"></script>
+    <script type="text/javascript" src="lib/highcharts/exporting.js"></script>
+    <script type="text/javascript" src="lib/highcharts/rgbcolor.js"></script>
+
+    <script type="text/javascript" src="lib/md5/md5.js"></script>
+    <!--定位经纬度的指令-->
+    <script type="text/javascript" src="app/common/aMap.js"></script>
+    <script type="text/javascript"
+            src="http://webapi.amap.com/maps?v=1.3&key=110a94917fedab9723fb7317813fd4de">
+    </script>
+    <style type="text/css">
+        .amap-logo {
+            right: 0 !important;
+            left: auto !important;
+            display: none;
+        }
+
+        .amap-copyright {
+            right: 70px !important;
+            left: auto !important;
+        }
+    </style>
+
+
+    <!--系统脚本 状态机-->
+    <!-- <script type="text/javascript" src="app/systemconfig/user.js"></script>-->
+    <script type="text/javascript" src="app/systemconfig/state.js"></script>
+    <script type="text/javascript" src="app/systemconfig/sys-config-ctrl.js"></script>
+    <script type="text/javascript" src="app/systemconfig/basevalue/base-value-ctrl.js"></script>
+    <script type="text/javascript" src="app/systemconfig/basevalue/base-value-service.js"></script>
+
+    <!--前台请求服务类-->
+    <script type="text/javascript" src="app/common/http-service.js"></script>
+    <!--下标过滤-->
+    <script type="text/javascript" src="app/common/chemicalcharfilter/chemicalcharfilter.js"></script>
+    <!--系统脚本 时间控件-->
+    <script type="text/javascript" src="app/common/date-picker.js"></script>
+    <!--系统脚本 分页插件-->
+    <script type="text/javascript" src="app/common/pagination/pagination.js"></script>
+    <!--<script type="text/javascript" src="app/common/fileUpLoad.js"></script>-->
+    <style>
+        @media screen and (max-width: 1500px) {
+            .menuPad .topMenuLi {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            .settingLis li {
+                padding: 0 6px;
+            }
+        }
+    </style>
+
+</head>
+
+<body ng-app="sysconfig" ng-controller="sysConfigCtrl">
+<div class="contain mapBg">
+
+    <div class="top chead energyChed visible">
+        <a ng-click="backHome()" class="back"></a>
+
+        <div class="hLogo config"></div>
+        <div class="topRig visible">
+            <div class="topMenu">
+                <ul class="uInfoUl">
+                  <li ng-class="{'active':!$state.$current.name.indexOf(menu.code)}" class="topMenuLi" ng-click="openMenu(menu)" style="padding-left: 4px;padding-right: 4px;font-size: 12px;text-align: center">排放因子</li>
+                  <li ng-class="{'active':!$state.$current.name.indexOf(menu.code)}" class="topMenuLi" ng-click="openMenu(menu)" style="padding-left: 4px;padding-right: 4px;font-size: 12px;text-align: center">折标煤系数</li>
+                  <li ng-class="{'active':!$state.$current.name.indexOf(menu.code)}" class="topMenuLi" ng-click="openMenu(menu)" style="padding-left: 4px;padding-right: 4px;font-size: 12px;text-align: center">数据校正</li>
+                  <li ng-class="{'active':!$state.$current.name.indexOf(menu.code)}" class="topMenuLi" ng-click="openMenu(menu)" style="padding-left: 4px;padding-right: 4px;font-size: 12px;text-align: center">台帐维护</li>
+                  <li ng-class="{'active':!$state.$current.name.indexOf(menu.code)}" class="topMenuLi" ng-click="openMenu(menu)" style="padding-left: 4px;padding-right: 4px;font-size: 12px;text-align: center">用户管理</li>
+                  <li ng-class="{'active':!$state.$current.name.indexOf(menu.code)}" class="topMenuLi active" ng-click="openMenu(menu)" style="padding-left: 4px;padding-right: 4px;font-size: 12px;text-align: center">基础数据</li>
+                  <li ng-class="{'active':!$state.$current.name.indexOf(menu.code)}" class="topMenuLi" ng-click="openMenu(menu)" style="padding-left: 4px;padding-right: 4px;font-size: 12px;text-align: center">登录日志</li>
+                  <li ng-class="{'active':!$state.$current.name.indexOf(menu.code)}" class="topMenuLi" ng-click="openMenu(menu)" style="padding-left: 4px;padding-right: 4px;font-size: 12px;text-align: center">新闻发布</li>
+                </ul>
+            </div>
+            <div class="userInfo settings">
+                <ul class="uInfoUl">
+                    <li ng-click="clickToNotice()">
+                        <div class="setIcon">
+                            <img src="resources/images/liz/hm_icon2.png" alt="">
+                            <span class="newsNum ng-binding">0</span>
+                        </div>
+                        <div class="setTxt">消息</div>
+                    </li>
+                    <li class="userCenter">
+                        <div class="setIcon">
+                            <img src="resources/images/liz/hm_icon3.png" alt="">
+                        </div>
+                        <div class="setTxt ng-binding" title="江苏中路管理员">
+                            江苏中...
+                        </div>
+                        <!--下拉-->
+                        <div class="inFoSlide">
+                            <ul>
+                                <li ng-click="showPersonalCenterHtml()">个人中心</li>
+                                <li ng-click="showPassword(true)">修改密码</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li ng-click="loginOut()">
+                        <div class="setIcon">
+                            <img src="resources/images/liz/hm_icon4.png" alt="">
+                        </div>
+                        <div class="setTxt">退出</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<div class="main" ui-view=""> </div>
+</div>
+<div ng-show="showPersonalCenter" >
+    <personal-center></personal-center>
+</div>
+<update-password></update-password>
+<div class="filter ng-hide" ng-show="mask"></div>
+<urge-report-info></urge-report-info>
+<style>
+    .back {
+        display: block;
+        float: left;
+        width: 32px;
+        height: 32px;
+        background: url(./resources/images/wy/back.png) no-repeat;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    .config {
+        background: url(./resources/images/config.png) no-repeat;
+    }
+</style>
+<script>
+
+    //个人中心点击下拉
+    (function () {
+        $('.userCenter').on('click', function () {
+            if ($(this).hasClass('cked')) {
+                $(this).find('.inFoSlide').slideUp();
+                $(this).removeClass('cked');
+            } else {
+                $(this).find('.inFoSlide').slideDown();
+                $(this).addClass('cked');
+            }
+
+        });
+
+        //清除冒泡
+        $('.inFoSlide li').on('click', function (e) {
+            $(this).parents('.inFoSlide').slideUp();
+            $('.userCenter').removeClass('cked');
+            e.stopPropagation();
+        });
+    })()
+</script>
+</body>
+</html>

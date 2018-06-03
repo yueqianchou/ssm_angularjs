@@ -1,0 +1,104 @@
+<style>
+    .group_page {
+        width: 490px;
+        height: 34px;
+        margin: 22px auto 0 auto;
+        font-size: 14px;
+        color: #333333;
+    }
+
+    .group_page span {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        border-radius: 2px;
+        background: #e8ecef;
+        color: #333333;
+        line-height: 24px;
+        cursor: pointer;
+        font-size: 12px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .group_page span.active {
+        background: #009b27;
+        color: white;
+    }
+
+    .group_page b {
+        width: 35px;
+        display: inline-block;
+        line-height: 34px;
+        font-size: 14px;
+        color: #d8d8d8;
+        text-align: center;
+        font-weight: normal;
+    }
+
+    .group_page input {
+        width: 43px;
+        box-sizing: border-box;
+        border: 1px solid #d8d8d8;
+        border-radius: 2px;
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 24px;
+    }
+
+    .group_page .can_active:hover {
+        background: #009b27;
+        color: white;
+    }
+    .pageNow{
+        width: 32px;
+        height: 28px;
+        float: left;
+        margin-left: 7px;
+        border: solid 1px #dddddd;
+        line-height: 28px;
+        text-align: center;
+        cursor: pointer;
+        transition: 0s;
+        background: #ffffff;
+    }
+    .pageNow:hover {
+        background: url(./resources/images/sunw/bg2.png) repeat-x;
+        color: #3c64d5;
+        border: solid 1px #9ba4b0;
+    }
+    .pageNowActive{
+        background: url(./resources/images/sunw/bg2.png) repeat-x;
+        color: #3c64d5;
+        border: solid 1px #9ba4b0;
+    }
+</style>
+
+    <div class="turnpages" style="bottom:15px;">
+        <div class="page_btn" ng-click="clickToJump(1)">首页</div>
+
+        <div class="page_btn" style="cursor: not-allowed" ng-show="pageNow == 1"><div class="icon_prev"></div>上一页</div>
+        <div class="page_btn ng-hide" ng-click="clickToJump(pageNow-1)" ng-show="pageNow>1"><div class="icon_prev"></div>上一页</div>
+
+
+
+        <ul class="page_list">
+            <!-- ngRepeat: page in pageCount track by $index -->
+            <li ng-repeat="page in pageCount track by $index" ng-click="clickToJump(page)" ng-class="{'pageNowActive pageNow':pageNow == page,'pageNow':pageNow != page}" class="ng-binding ng-scope pageNowActive pageNow">1</li><!-- end ngRepeat: page in pageCount track by $index -->
+
+        </ul>
+
+        <div class="page_btn" ng-show="pageNow == pageCountNum" style="cursor: not-allowed">下一页<div class="icon_next"></div></div>
+        <div class="page_btn ng-hide" ng-click="clickToJump(pageNow+1)" ng-show="pageNow < pageCountNum">下一页<div class="icon_next"></div></div>
+        <div class="page_btn" ng-click="clickToJump(pageCountNum)">末页</div>
+
+        <!-- 跳转框-->
+        <div class="page_btn padding0 ng-binding">1/1页<b>|</b>跳转到</div>
+        <div class="page_btn padding0">
+            <input type="text" id="txtNumber" width="50px"
+                   onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}" ng-model="goPage" class="ng-pristine ng-untouched ng-valid">
+        </div>
+        <div class="page_btn go" ng-click="clickToJump(goPage)">跳转</div>
+
+    </div>
+

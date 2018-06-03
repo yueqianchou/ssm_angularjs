@@ -1,0 +1,91 @@
+
+    <style>
+    * {
+        transition: all 0s linear;
+    }
+    .behindMap{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 200;
+    }
+    .outContent{
+        position: relative;
+        width: 900px;
+        z-index: 210;
+        /*margin: 5% auto;*/
+    }
+    .mapContent{
+        height: 615px;
+        width: 900px;
+    }
+    .mapTip{
+        background: white;
+        text-align: center;
+        line-height: 35px;
+        height: 37px;
+    }
+    .mapTip input{
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #myPageTop {
+        position: absolute;
+        top: -15px;
+        right: 10px;
+        background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0;
+        margin: 10px auto;
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .mask {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background: url("./resources/images/mask-bg.png") repeat;
+        /*overflow: auto;*/
+    }
+    .mNav-btngroup{
+        float: right;
+        margin-right: 14px;
+    }
+
+</style>
+    <div class="popL weiAddPop" id="behindMap" style="z-index: 200;">
+        <div class="outContent" id="outContent" style="position: absolute;">
+            <div id="mapContainer" class="mapContent amap-container" style="position: relative; background: rgb(252, 249, 242); cursor: url(&quot;http://webapi.amap.com/theme/v1.3/openhand.cur&quot;), default;"><object style="display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; pointer-events: none; z-index: -1;" type="text/html" data="about:blank"></object><div class="amap-maps"><div class="amap-drags" style=""><div class="amap-layers" style="transform: translateZ(0px);"><canvas class="amap-layer" width="900" height="615" style="position: absolute; z-index: 0; top: 0px; left: 0px; height: 615px; width: 900px;"></canvas><div class="amap-markers" style="position: absolute; z-index: 120; top: 307px; left: 450px;"><div class="amap-marker" style="top: -31px; left: -9px; z-index: 100; transform: rotate(0deg); transform-origin: 9px 31px 0px; display: block;"><div class="amap-icon" style="position: absolute; width: 19px; height: 33px; opacity: 1;"><img src="http://webapi.amap.com/theme/v1.3/markers/n/mark_bs.png" style="width: 19px; height: 33px; top: 0px; left: 0px;"></div></div></div><canvas class="amap-labels" draggable="false" width="900" height="615" style="position: absolute; z-index: 99; height: 615px; width: 900px; top: 0px; left: 0px;"></canvas></div><div class="amap-overlays" style=""></div></div></div><div style="display: none;"></div><div class="amap-controls"><div class="amap-toolbar" style="left: 10px; top: 10px; visibility: visible;"><div class="amap-pancontrol" style="position: relative; display: block;"><div class="amap-pan-left"></div><div class="amap-pan-top"></div><div class="amap-pan-right"></div><div class="amap-pan-bottom"></div></div><div class="amap-locate" style="position: relative; left: 17px; display: block;"></div><div class="amap-zoomcontrol" style="position: relative; left: 14px;"><div class="amap-zoom-plus"></div><div class="amap-zoom-ruler" style="display: block;"><div class="amap-zoom-mask" style="height: 63px;"></div><div class="amap-zoom-cursor" style="top: 63px;"></div><div class="amap-zoom-labels"><div class="amap-zoom-label-street"></div><div class="amap-zoom-label-city"></div><div class="amap-zoom-label-province"></div><div class="amap-zoom-label-country"></div></div></div><div class="amap-zoom-minus"></div></div></div></div><a class="amap-logo" href="http://gaode.com" target="_blank"><img src="http://webapi.amap.com/theme/v1.3/autonavi.png"></a><div class="amap-copyright" style="display: none;"><!--v1.3.28--> © 2018 AutoNavi <span class="amap-mcode">- GS(2018)1709号</span></div></div>
+            <div id="myPageTop">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td style="border: none">
+                            <label>请输入关键字：</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: none">
+                            <input id="tipinput" ng-model="address" class="ng-pristine ng-untouched ng-valid">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mapTip" style="height: 42px">
+                <span>经度：</span><input type="text" ng-model="longitudeValue" id="longitude" class="ng-pristine ng-untouched ng-valid">
+                <span style="margin-left: 10px">纬度：</span><input type="text" ng-model="latitudeValue" id="latitude" class="ng-pristine ng-untouched ng-valid">
+                <div class="mNav-btngroup">
+                    <a id="getPosition" class="pBtn2Small marig12" style="color: #000000;cursor: pointer">输入定位</a>
+                    <a id="satellite" class="pBtn2Small marig12 ng-binding" style="color: #000000;cursor: pointer">切换卫星图</a>
+                    <a class="pBtn1Small marig8" ng-click="closeMap()" style="color: #000000;">确定</a>
+                    <a class="pBtn2Small marig12" style="color: #000000;cursor: pointer;margin-left: 10px;" ng-click="showMap = false">取消</a>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,663 @@
+
+.contain {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    min-width: 1280px;
+    min-height: 650px;
+}
+
+.top {
+    height: 56px;
+    overflow: hidden;
+    background: url(../../images/head_bg.png) no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    float: left;
+    background: url(../../images/logo.png) no-repeat;
+    height: 30px;
+    width: 400px;
+    position: relative;
+    margin-top: 13px;
+    margin-left: 10px;
+}
+
+.sublogo {
+    float: left;
+    background: url(../../images/sublogo.png) no-repeat;
+    height: 30px;
+    width: 100px;
+    position: relative;
+    margin-top: 13px;
+    margin-left: 10px;
+}
+
+.topRig {
+    width: auto;
+    float: right;
+    height: auto;
+    overflow: hidden;
+}
+
+.topMenu {
+    width: auto;
+    float: left;
+    height: auto;
+    border-right: 1px solid #202e42;
+}
+
+.userInfo {
+    width: auto;
+    float: left;
+    height: auto;
+    border-left: 1px solid #404d61;
+    padding-left: 15px;
+}
+
+.topMenuLi {
+    display: block;
+    height: 56px;
+    line-height: 56px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    color: #fff;
+    float: left;
+    cursor: pointer;
+
+}
+
+.topMenuLi.active,.topMenuLi:hover {
+    background: linear-gradient(#198aff, #0c63d7);
+    box-shadow: 0 0 8px 2px #11235f;
+    font-weight: bold;
+}
+
+.user {
+    width: 70px;
+    display: block;
+    float: left;
+    text-align: left;
+    border-right: 1px solid #606e87;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 6px;
+    text-indent: 5px;
+    background: url(../../images/icon_user.png) no-repeat left center;
+    padding-left: 18px;
+}
+
+.exit {
+    width: auto;
+    display: block;
+    float: left;
+    cursor: pointer;
+    line-height: 28px;
+    margin-left: 10px;
+}
+
+.exit:hover span {
+    text-decoration: underline;
+}
+
+.uInfoList {
+
+    height: 28px;
+    line-height: 28px;
+    border-bottom: 1px solid #516079;
+    font-size: 12px;
+    color: #c7d7f2;
+    font-family: "宋体";
+    text-align: center;
+}
+
+.subTxt {
+    height: 18px;
+    line-height: 18px;
+    width: auto;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 12px;
+    color: #293452;
+    background: linear-gradient(#fdfeff, #cddcf4);
+    float: left;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 18px;
+    margin-left: 5px;
+}
+
+.subTxt:before {
+    content: '';
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    top: 18px;
+    left: 0px;
+    background: url(../../images/icon_tar.png) no-repeat;
+}
+
+.tab {
+    height: 42px;
+    background: linear-gradient(to bottom,#f9fafc,#e2e6eb);
+    border-bottom: 1px solid #abb5c4;
+    box-shadow: 0 1px 2px 1px #b8c2d2;
+    overflow: hidden;
+    display: none;
+}
+
+.data {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.main {
+    position: absolute;
+    top: 56px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    background: #c4cfe0;
+
+}
+
+.top98 {
+    top: 98px;
+}
+
+.show {
+    display: block;
+}
+
+/*规范*/
+.gf_list {
+    display: block;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    padding: 20px;
+}
+
+.btn_blue {
+    height: 44px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: linear-gradient(to bottom,#1c70f5,#134dc5);
+    border: 1px solid #094bbb;
+    line-height: 44px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.btn_blue:hover {
+    background: linear-gradient(to top,#1c70f5,#134dc5);
+}
+
+.btn_blue_small {
+    height: 28px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: linear-gradient(to bottom,#1889fd,#0c62d5);
+    border: 1px solid #0943a6;
+    line-height: 28px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.btn_blue_small:hover {
+    background: linear-gradient(to top,#1889fd,#0c62d5);
+}
+
+.btn_gray {
+    height: 34px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: linear-gradient(#fefeff, #e9edf3);
+    line-height: 34px;
+    font-size: 16px;
+    color: #5d6c85;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid #ccd1d9;
+}
+
+.btn_gray:hover {
+    background: linear-gradient(#e9edf3, #fefeff);
+}
+
+.btn_gray_small {
+    height: 26px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: linear-gradient(#fff, #eaedf3);
+    line-height: 26px;
+    font-size: 14px;
+    color: #5d6c85;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid #a0a7b2;
+}
+
+.btn_gray_small:hover {
+    background: linear-gradient(#eaedf3, #fff);
+}
+
+.state_no {
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #438bfb;
+    background: #fff;
+}
+
+.state_did {
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #fff;
+    background: #56bf89;
+}
+
+.btn_icon_blue {
+    font-size: 14px;
+    color: #fff;
+    height: 26px;
+    padding-left: 25px;
+    padding-right: 10px;
+    border: 1px solid #0944a9;
+    background: linear-gradient(to bottom,#1c6ff3,#134dc5);
+    line-height: 26px;
+    font-weight: bold;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn_icon_blue:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background: url(../../images/icon_back.png) no-repeat;
+    left: 10px;
+    top: 7px;
+
+}
+
+.btn_icon_blue:hover {
+    background: #307bf0;
+}
+
+.formlis {
+    height: auto;
+    overflow: hidden;
+    float: left;
+}
+
+.formlis_txt {
+    width: auto;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #313131;
+    float: left;
+}
+
+.formlis_sele {
+    height: 26px;
+    border: 1px solid #ccd1d9;
+    width: 100px;
+    float: left;
+    background: #fff;
+}
+
+.formlis_sele select {
+    font-size: 14px;
+    color: #313131;
+    background: none;
+    border: none;
+    width: 100%;
+    outline: none;
+    line-height: 26px;
+    height: 26px;
+    font-family: "微软雅黑";
+}
+
+.btn_setting {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.btn_setting.white {
+    background: url(../../images/imgwq/icon_setting.png) no-repeat;
+}
+
+.btn_setting.gray {
+    background: url(../../images/imgwq/icon_setting_gray.png) no-repeat;
+}
+
+.top42 {
+    top: 42px;
+}
+
+
+/*template2*/
+
+.map{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.map img{
+    width: 100%;
+    height: 100%;
+}
+.map_legend{
+    position: absolute;
+    bottom: 15px;
+    right: 357px;
+    width: 88px;
+    height: 202px;
+    border: 1px solid #000000;
+    background: rgba(0,0,0,0.5);
+}
+.consu{
+    width: 86px;
+    height: 138px;
+    border: 1px solid #4c5567;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+}
+.consu li{
+    width: 73px;
+    height: 68px;
+    border-bottom: 1px dashed #000000;
+    margin: auto;
+}
+.consu li:last-child{
+    border-bottom: none;
+}
+.consu i{
+    display: block;
+    height: 40px;
+    width: 73px;
+    background: url("../../images/wy/car_low.png") no-repeat center 9px;
+}
+.consu li:last-child i{
+    background: url("../../images/wy/car_high.png") no-repeat center 9px;
+}
+.consu span{
+    color: #ccd1d9;
+    font-size: 12px;
+}
+.map_numb{
+    width: 86px;
+    height: 60px;
+    border: 1px solid #4c5567;
+    text-align: center;
+}
+.map_numb i{
+    display: block;
+    width: 86px;
+    height: 36px;
+    background: url("../../images/wy/bubble.png") no-repeat center 9px;
+    cursor: pointer;
+}
+.map_numb i.active{
+     background: url("../../images/wy/bubble_h.png") no-repeat center 9px;
+}
+.map_numb span{
+    color: #8a9099;
+    font-size: 12px;
+}
+.addr{
+    width: 30px;
+    height: 46px;
+    position: absolute;
+}
+.addr_r{
+    background: url("../../images/wy/car_higher.png") no-repeat center center;
+}
+.addr_b{
+    background: url("../../images/wy/car_lower.png") no-repeat center center;
+}
+.addr1{
+    left: 237px;
+    bottom: 237px;
+}
+.addr2{
+    left: 321px;
+    bottom: 70px;
+}
+.addr3{
+    left: 613px;
+    bottom: 220px;
+}
+.addr4{
+    left: 777px;
+    bottom: 338px;
+}
+.addr5{
+    left: 693px;
+    bottom: 488px;
+}
+.addr6{
+    left: 859px;
+    bottom: 418px;
+}
+.car_detail_pop{
+    width: 54px;
+    height: 74px;
+    background: url("../../images/wy/popbg.png") no-repeat center center;
+    position: absolute;
+    bottom: 48px;
+    left: -12px;
+}
+.car_detail_title{
+    text-align: center;
+    height: 24px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.addr_r .car_detail_title{
+    background: #d94a4b;
+}
+.addr_b .car_detail_title{
+    background: #427dd7;
+}
+.car_detail_title label{
+    color: #dae1ee;
+    font-size: 12px;
+}
+.car_detail_title b{
+    color: #dae1ee;
+    font-size: 12px;
+}
+.car_detail_cont li{
+    width: 37px;
+    height: 21px;
+    line-height: 21px;
+    margin-left: 6px;
+    padding: 0 1px;
+    border-bottom: 1px dashed #000000;
+}
+.car_detail_cont li:last-child{
+    border-bottom: none;
+}
+.car_detail_cont i{
+    width: 10px;
+    height: 21px;
+    background: url("../../images/wy/car_b.png") no-repeat center center;
+}
+.car_detail_cont li:last-child i{
+    background: url("../../images/wy/car_r.png") no-repeat center center;
+}
+.car_detail_cont span{
+    color: #ccd1d9;
+    font-size: 12px;
+}
+.navLeft{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 90px;
+}
+.navLeft li{
+    width: 88px;
+    height: 78px;
+    border: 1px solid #000000;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    margin-bottom: 6px;
+}
+.navLeft img{
+    display: block;
+    margin: 14px auto 8px;
+}
+.navLeft span{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.navLeft li.active,.navLeft li:hover{
+    background: #3ea4f8;
+    border: 1px solid #378ae8;
+    cursor: pointer;
+}
+.key{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+.key img{
+    display: block;
+}
+.key span{
+    display: block;
+    width: 74px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: url("../../images/wy/tl2.png") no-repeat center center;
+    color: #ffffff;
+    font-size: 12px;
+    position: absolute;
+    left: 40px;
+    bottom: 0px;
+}
+.key em{
+    display: block;
+    width: 74px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: url("../../images/wy/rule.png") no-repeat center bottom;
+    color: #000000;
+    font-size: 12px;
+    position: absolute;
+    left: 120px;
+    bottom: 0px;
+}
+.left40{
+    left: 40px!important;
+}
+.nav_regList{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    width: 327px;
+    background: rgba(0,0,0,0.6);
+}
+.navRight{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #000000;
+}
+.navRight_next{
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    height: 64px;
+    width: 14px;
+    background: url("../../images/wy/ico9.png") no-repeat center center;
+    border: 1px solid #000000;
+    background-color: rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+.navThree{
+    position: absolute;
+    top: 15px;
+    right: 357px;
+}
+.navThree li{
+    float: left;
+    width: 127px;
+    height: 34px;
+    line-height: 34px;
+    margin-left: 5px;
+    border: 1px solid #000000;
+    background: rgba(0,0,0,0.6);
+}
+.navThree img{
+    display: inline-block;
+    margin: 6px 9px 7px 16px;
+    vertical-align: middle;
+}
+.navThree span{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.navThree li.active,.navThree li:hover{
+    background: #3ea4f8;
+    border: 1px solid #378ae8;
+    cursor: pointer;
+}
+.main_content{
+    position: absolute;
+    top: 61px;
+    left: 120px;
+    right: 357px;
+    bottom: 19px;
+    border: 1px solid #000000;
+    background: rgba(0,0,0,0.6);
+}
+
+
+
+
+
+
+
+
+

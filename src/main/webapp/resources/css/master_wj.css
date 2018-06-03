@@ -1,0 +1,900 @@
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.paddtop5{
+    padding-top: 5px;
+}
+.padd11_9{
+    padding: 11px 9px 0 0;
+}
+.btn_blue_small.cancel{
+    color: #9ba7ba;
+    background: #29303b;
+}
+.borderBlack{
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+.no_border{
+    border: 0!important;
+}
+
+
+/**/
+.filter{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 99;
+    /*display: none;*/
+}
+.popup{
+    width: 480px;
+    height: 605px;
+    margin-left: -240px;
+    margin-top: -302px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    z-index: 100;
+}
+.popup .topTitle{
+    height: 41px;
+    line-height: 41px;
+    padding: 0 15px;
+    border-bottom: 1px solid #b0b9bf;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    background: url("../images/wj/toptitle_bg.png") no-repeat;
+}
+.popup .topTitle span{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    margin-top: -7px;
+    right: 15px;
+    top: 50%;
+    background: url("../images/wj/icon_close.png") no-repeat right center;
+}
+.popup .mainContent{
+    height: 470px;
+    margin: 20px;
+}
+.popup .button{
+    height: 52px;
+    border-top: 1px solid #d3dbe0;
+    background: #f5f7fa;
+}
+.f_right div{
+    float: left;
+    margin-left: 7px;
+}
+.mainContent .title{
+    padding: 0 9px;
+    height: 41px;
+    line-height: 41px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #f5f7fa;
+    color: #2a3240;
+}
+ul.content{
+    overflow: hidden;
+    border:  1px solid #f5f7fa;
+}
+ul.content li{
+    display: block;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    color: #5d6c85;
+}
+ul.content li input{
+    width: 52px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #ccd1d9;
+    font-size: 12px;
+    font-weight: bold;
+    color: #676c73;
+    outline: none;
+    margin: 0 10px;
+    text-indent: 1em;
+}
+.quarter{
+    margin-top: 10px;
+}
+.halfYear{
+    margin-top: 10px;
+}
+.set{
+    margin: 12px 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+.dashed{
+    border-bottom: 1px dashed #e9ecf2;
+    margin: 0 10px;
+}
+.paddLeft10{
+    padding-left: 10px;
+}
+
+
+/*【政府端】决策分析-数据核算*/
+.analyze_item{
+    width: 20%;
+    height: 340px;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+}
+.item_main{
+    width: 100%;
+    height: 100%;
+}
+.item_tit{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #323741;
+    background: url("../images/wj/arrow_green.png") no-repeat right top;
+    text-align: center;
+}
+.item_tit h1{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 20px;
+}
+.wait_account .item_tit h1 span{
+    padding: 0 5px;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background: #438bfb;
+    border-radius: 9px;
+}
+.item_cont{
+    height: 248px;
+    text-align: center;
+    overflow: hidden;
+}
+.item_cont .info{
+    margin-top: 30px;
+    height: 70px;
+}
+.item_cont .info h2{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.5em;
+}
+.item_cont h1{
+    font-size: 36px;
+    font-weight: bold;
+    color: #b1cefc;
+    font-family: 'Century Gothic';
+}
+.item_cont h1 span{
+    color: #464c58;
+}
+.item_cont .btn{
+    margin-top: 30px;
+    display: inline-block;
+    width: 123px;
+    height: 34px;
+    line-height: 34px;
+    background: #29303b;
+    border: 1px solid #0a3583;
+    font-size: 14px;
+    font-weight: bold;
+    color: #9ba7ba;
+}
+.item_cont .btn:hover{
+    cursor: pointer;
+}
+.analyze_item.active .item_tit{
+    background: url("../images/wj/arrow_red.png") no-repeat right top;
+}
+.analyze_item.active .item_cont h1,.analyze_item.active .item_cont h2{
+    color: #fd3f2f;
+}
+.analyze_item.active .btn{
+    background: #438bfb;
+    color: #fff;
+}
+
+
+
+
+/*【政府端】决策分析-数据核算-更新记录*/
+.dataAnalyze_popup{
+    width: 545px;
+    height: 372px;
+    margin-left: -272px;
+    margin-top: -186px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #14181f;
+    z-index: 100;
+    box-sizing: border-box;
+    border: 1px solid #323741;
+}
+.dataAnalyze_popup .tit{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #323741;
+    background: #1e242e;
+}
+.dataAnalyze_popup .tit h1{
+    margin-left: 11px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+.dataAnalyze_popup .tit .close{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../images/wj/icon_close_2.png") no-repeat center;
+    margin: 12px 13px 0 0 ;
+}
+.dataAnalyze_popup .tit .close:hover{
+    cursor: pointer;
+}
+.dataAnalyze_popup .cont{
+    position: absolute;
+    top: 51px;
+    left: 9px;
+    right: 9px;
+    bottom: 62px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.dataAnalyze_popup .cont .main_content_th{
+    box-sizing: border-box;
+    top:0;
+    background: #1e242e;
+    border-left: 1px solid #323741;
+}
+.dataAnalyze_popup .cont .main_content_th tr{
+    box-sizing: border-box;
+    border-top: 2px solid #323741;
+    border-bottom: 1px solid #323741;
+}
+.dataAnalyze_popup .cont th{
+    box-sizing: border-box;
+    border-right: 1px solid #323741;
+    color: #9ba7ba;
+    font-size: 14px;
+}
+.dataAnalyze_popup .cont .main_content_td{
+    box-sizing: border-box;
+    border-bottom: 1px solid #323741;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:55px;
+    overflow: hidden;
+}
+.dataAnalyze_popup .cont .main_content_td tr:nth-child(odd){
+    border-top: 1px solid #323741;
+    border-left: 1px solid #323741;
+    background: #1e242e;
+}
+.dataAnalyze_popup .cont .main_content_td tr:nth-child(even){
+    border-top: 1px solid #323741;
+    border-left: 1px solid #323741;
+    background: #323741;
+}
+.dataAnalyze_popup .cont td{
+    box-sizing: border-box;
+    border-right: 1px solid #323741;
+    color: #fff;
+    font-size: 14px;
+}
+.dataAnalyze_popup .bottom{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 51px;
+    border-top: 1px solid #323741;
+    background: #1e242e;
+}
+
+
+
+
+/*【政府端】决策分析-综合报告-未生成*/
+.select_years{
+    margin: 6px 0;
+    background: #29303b;
+    line-height: normal;
+}
+.select_years span{
+    width: 28px;
+    height: 28px;
+    box-sizing: border-box;
+}
+.select_years span:hover{
+    cursor: pointer;
+}
+.select_years .previous{
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #14181f;
+    background: url("../images/wj/icon_previous.png") no-repeat center;
+}
+.select_years .next{
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #14181f;
+    background: url("../images/wj/icon_next.png") no-repeat center;;
+}
+.roll_area{
+    height: 28px;
+    width: 400px;
+    overflow: hidden;
+}
+.roll_area .active{
+    background: #438bfb;
+}
+.select_years ul{
+    height: 28px;
+    width: 560px;
+    box-sizing: border-box;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+}
+.select_years ul li{
+    display: block;
+    box-sizing: border-box;
+    height: 28px;
+    width: 80px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.select_years ul li span{
+    color: #fff;
+}
+.select_years ul li:hover{
+    background: #438bfb;
+}
+.select_years ul li span{
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    margin: 5px 0;
+    border-right: 1px solid #14181f;
+    width: 81px
+}
+.select_years ul li:hover{
+    cursor: pointer;
+}
+.formList .green{
+    padding-left: 26px;
+    background: url("../images/wj/dot_green.png") no-repeat 9px center;
+}
+.formList .red{
+    padding-left: 26px;
+    background: url("../images/wj/dot_red.png") no-repeat 9px center;
+}
+.formList .notes span{
+    margin-left: 10px;
+    font-size: 12px;
+    color: #9ba7ba;
+}
+.color1e{
+    background: #1e242e;
+}
+.tools{
+    height: 44px;
+    color: #323741;
+    border-bottom: 1px solid #14181f;
+    background: #323741;
+}
+.analyze .tools li{
+    display: block;
+    height: 14px;
+    border-right: 1px solid #000;
+    margin-top: 15px;
+}
+.analyze .tools li span{
+    display: inline-block;
+    height: 44px;
+    width: 56px;
+    margin-top: -15px;
+}
+.tools .save{
+    background: url("../images/wj/icon_save.png") no-repeat center;
+}
+.tools .fontSize{
+    background: url("../images/wj/icon_fontSize.png") no-repeat center;
+}
+.tools .enlarge{
+    background: url("../images/wj/icon_enlarge.png") no-repeat center;
+}
+.tools .reduce{
+    background: url("../images/wj/icon_reduce.png") no-repeat center;
+}
+.tools .print{
+    background: url("../images/wj/icon_print.png") no-repeat center;
+}
+.tools .fullScreen{
+    background: url("../images/wj/icon_fullScreen.png") no-repeat center;
+}
+.tools .turns{
+    height: 28px;
+    margin: -8px 5px 0;
+}
+.tools .turns i{
+    display: inline-block;
+    height: 28px;
+    width: 19px;
+    margin: 0 10px;
+}
+.tools .turns i:hover,.analyze .tools li span:hover{
+    cursor: pointer;
+}
+.tools .turns .previous{
+    background: url("../images/wj/icon_previous.png") no-repeat center;
+}
+.tools .turns .next{
+    background: url("../images/wj/icon_next.png") no-repeat center;
+}
+.tools .turns input{
+    height: 26px;
+    line-height: 26px;
+    width: 36px;
+    border: 1px solid #3f495c;
+    border-radius: 2px;
+    text-align: center;
+    color: #fff;
+    background: #0a0e14;
+    outline: none;
+}
+.tools .turns .pages{
+    color: #9ba7ba;
+    font-size: 14px;
+}
+.tools .turns .pages b{
+    font-weight: normal;
+}
+.no_report{
+    height: 140px;
+    padding-left: 189px;
+    background: url("../images/wj/no_report.png") no-repeat left center;
+    margin-top: -70px;
+    margin-left: -187px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.no_report h1{
+    font-size: 22px;
+    font-weight: normal;
+    color: #fff;
+}
+.no_report h3{
+    font-size: 16px;
+    font-weight: normal;
+    color: #9ba7ba;
+    margin-top: 25px;
+}
+.no_report .btn{
+    display: inline-block;
+    width: 135px;
+    height: 36px;
+    line-height: 36px;
+    background: url("../images/wj/whiteBlue_btnBG.png") no-repeat center;
+    background-size: cover;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+}
+.no_report .btn:hover{
+    cursor: pointer;
+}
+
+
+/*【政府端】决策分析-综合报告*/
+.report_txt{
+    position: absolute;
+    top: 45px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+.report_txt .cont{
+    margin: 40px 30px 30px;
+    color: #c5cdd8;
+
+}
+.report_txt .cont h1{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    line-height: 2em;
+}
+.report_txt .cont h3{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2em;
+    text-indent: 2em;
+}
+.report_txt .cont p{
+    font-size: 16px;
+    line-height: 2em;
+    margin: 18px 0;
+    text-indent: 2em;
+}
+
+
+
+/*决策支持_数据推衍*/
+
+.jueceLogo{
+    background: url("../images/wj/juece_txtLogo.png") no-repeat center!important;
+}
+.energyOne_ul{
+    overflow: hidden;
+    margin-top: 10px;
+}
+.energyOne_li{
+    box-sizing: border-box;
+    width: 33.3%;
+
+    float: left;
+    padding: 10px;
+}
+.energyOne_mainLi{
+    text-align: center;
+    border: 1px solid #000;
+    background: #07347c;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+.energyOne_mainLi div{
+    margin-top: 15px;
+}
+.energy_one{
+    height: 198px;
+    border-bottom: 1px solid #000;
+}
+.energyOne_tit{
+    position: relative;
+    height: 15px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+.cityEnhIcon{
+    cursor: pointer;
+
+}
+.energyOne_tit .cityEnhIcon{
+    position: absolute;
+    top: 10px;
+    right: 12px;
+}
+.energyOneNum_1,.energyOneNum_2,.energyOneNum_3{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+.energyOneNum_1:before{
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    background: url("../images/wj/icon_totalEngery_1.png") no-repeat left center;
+}
+.energyOneNum_2:before{
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    background: url("../images/wj/icon_totalEngery_2.png") no-repeat left center;
+}
+.energyOneNum_3:before{
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    background: url("../images/wj/icon_percent.png") no-repeat left center;
+}
+.energyOne_unit{
+    font-size: 12px;
+    color: #96c7ff;
+}
+.color_bg{
+
+    position: relative;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(49, 165, 252, 1)), to(rgba(0, 235, 255, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.energy_two {
+    position: absolute!important;
+    top: 198px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #1d3e74;
+}
+.wj_bubb{
+    top: 34%;
+    left: 48.9%;
+}
+.wj_bubb .bubbleTxt1{
+    width: auto;
+}
+.wj_bubb .bubbleLi{
+    padding: 0 20px;
+}
+.wj_bubb .wj_red{
+    font-size: 20px;
+    color: #ff6600;
+}
+.wj_bubb .wj_blue{
+    font-size: 20px;
+    color: #438bfb;
+}
+.dataPush_right{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #0c56a7;
+    border-radius: 1px;
+    background: rgba(1,35,87,0.5);
+    box-shadow: 0 2px 8px 1px #041a3f;
+    position: relative;
+}
+
+.dataPush_right_ul{
+    position: absolute;
+    top: 45px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+.dataPush_right_li{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+
+}
+.dataPush_right_mainLi{
+    border: 1px solid #000;
+}
+.dataPushRight_li_tit {
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #072b66;
+    border-bottom: 1px solid #000;
+}
+.dataPushRight_li_tit .cityEnhIcon{
+    margin-top: 5px;
+}
+.dataPushRight_li_cont{
+    box-sizing: border-box;
+    padding: 15px;
+    background: rgba(1,35,87,0.2);
+}
+.dataPushRightLi_table{
+    width: 100%;
+    font-size: 12px;
+    color: #66ceff;
+}
+.dash_blue{
+    border-bottom: 1px dashed #284879;
+    margin: 10px 0;
+}
+.font20B{
+    font-size: 20px;
+    font-weight: bold;
+}
+.colorG_bg{
+
+    position: relative;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#0ed899), to(#39ff65));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.color78ffbe{
+    color: #78ffbe;
+}
+
+
+/*【政府端】决策支持--数据推衍-行业数据推衍*/
+.wj_contain{
+    background: url("../images/liz/map_bg.jpg") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    min-width: 1366px;
+
+}
+.overflowH{
+    position: absolute;
+    top:99px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+}
+.cancel{
+    box-sizing: border-box;
+    height:100%;
+    padding: 7px 15px 0 0;
+    border-right: 1px solid #053b77;
+}
+.hform .tit{
+    font-size: 16px;
+    color: #fff;
+    padding-left: 15px;
+}
+.wj_select{
+    height: 26px;
+    line-height: 26px;
+    color: #fff;
+    background: #072b66;
+    border: 1px solid #2371c6;
+    margin-right: 10px;
+}
+.wj_select select,.wj_select option{
+    height: 26px;
+    line-height: 26px;
+    color: #fff;
+    background: #072b66;
+    position: relative;
+    top: -2px;
+}
+.calculation{
+    margin: 10px;
+}
+.wj_table{
+    border-top: 1px solid #0c56a7;
+    border-left: 1px solid #0c56a7;
+    border-bottom: 1px solid #0c56a7;
+    color: #96c7ff;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+}
+.lineH20{
+    line-height: 20px;
+}
+.wj_table .th{
+    height: 80px;
+    background: rgba(47, 93, 161, 0.5);
+}
+.wj_table .th th{
+    box-sizing: border-box;
+    border-right: 1px solid #0c56a7;
+    border-bottom: 1px solid #0c56a7;
+}
+.wj_table .td{
+    height: 40px;
+    background: rgba(47, 93, 161, 0.5);
+}
+.wj_table .td:nth-child(even){
+    background: rgba(1,25,61,0.5);
+}
+.wj_table .td td{
+    box-sizing: border-box;
+    border-right: 1px solid #0c56a7;
+}
+.whiteBlod{
+    color: #fff;
+    font-weight: bold;
+}
+.fontW_nomarl{
+    padding-left: 10px;
+    font-weight: normal;
+}
+.energy_chart{
+    margin: 10px;
+    border: 1px solid #0c56a7;
+    background: rgba(0, 29, 72, 0.8);
+    position: relative;
+}
+.paddingT12{
+    padding: 12px 0;
+}
+.energyChart_bottom{
+    text-align: center;
+    padding: 15px 0;
+}
+.energy_chart .wj_bubb {
+    top: 24.5%;
+    left: 51.3%;
+}
+
+
+
+
+
+
+
+
+/*滚动条*/
+.mCSB_inside > .mCSB_container {
+    margin-right: 0px;
+}
+
+.mCSB_scrollTools {
+    right: 0px;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #f2f2f2;
+    background-color: rgba(242, 242, 242, 1);
+    filter: "alpha(opacity=40)";
+    -ms-filter: "alpha(opacity=40)";
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #d4d3d3;
+    background-color: rgba(212, 212, 211, 0.75);
+    filter: "alpha(opacity=75)";
+    -ms-filter: "alpha(opacity=75)";
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #d4d3d3;
+    background-color: rgba(212, 212, 211, 0.85);
+    filter: "alpha(opacity=85)";
+    -ms-filter: "alpha(opacity=85)";
+}
+
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #d4d3d3;
+    background-color: rgba(212, 212, 211, 0.9);
+    filter: "alpha(opacity=90)";
+    -ms-filter: "alpha(opacity=90)";
+}
+
+/*滚动条结束*/

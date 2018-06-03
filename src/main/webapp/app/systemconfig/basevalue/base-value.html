@@ -1,0 +1,190 @@
+<style class="ng-scope">
+    .sysDatePickerCss1 {
+        width: 121px !important;
+        text-align: left !important;
+        height: 26px !important;
+        /* background-color: #072b66 !important; */
+        font-size: 100% !important;
+        /* color: #ffffff !important; */
+        border: 1px solid #2371c6 !important;
+        text-indent: 9px !important;
+    }
+
+    .selectButton {
+        height: 10px;
+        padding: 4px 15px 4px 15px;
+        margin-left: 20px;
+        display: inline;
+        background: linear-gradient(to bottom, #1889fd, #0c62d5);
+        border: 1px solid #0943a6;
+        line-height: 28px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 2px;
+        box-sizing: border-box;
+    }
+
+    .otherClass {
+        margin-top: 35px;
+    }
+
+    .leftMenu li:nth-child(4) i {
+        background: url("resources/images/wy/zhbg1.png") no-repeat center center;
+    }
+
+    .leftMenu li:nth-child(5) i {
+        background: url("resources/images/wy/sjty1.png") no-repeat center center;
+    }
+
+    .leftMenu li:nth-child(6) i {
+        background: url("resources/images/wy/qsyc1.png") no-repeat center center;
+    }
+
+    .leftMenu li:nth-child(4).active i, .leftMenu li:first-child(4):hover i {
+        background: url("resources/images/wy/zhbg2.png") no-repeat center center;
+    }
+
+    .leftMenu li:nth-child(5).active i, .leftMenu li:nth-child(5):hover i {
+        background: url("resources/images/wy/sjty2.png") no-repeat center center;
+    }
+
+    .leftMenu li:nth-child(6).active i, .leftMenu li:nth-child(6):hover i {
+        background: url("resources/images/wy/qsyc2.png") no-repeat center center;
+    }
+</style>
+<div class="tab show ng-scope">
+    <h4>配置管理</h4>
+</div>
+
+<div class="data business ng-scope">
+    <div class="leftMenu">
+        <ul>
+            <li ng-repeat="leftMenu in leftMenus" ng-click="changeMenu(leftMenu)" ng-class="{'active':menu==leftMenu.type_code}" >
+                <i></i>
+                <span >{{leftMenu.type_name}}</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="dataCont">
+        <div style="margin-left: 20px;  margin-top: 10px; ">
+            <span ng-show="rightDiv!='trend_forecast'">年份：</span>
+            <!-- ngIf: periodType=='A01' --><input ng-if="periodType=='A01'" id="time_idA01" type="text" class="Wdate sysDatePickerCss1 ng-pristine ng-untouched ng-valid ng-scope" ng-model="periodValue" ng-show="deduce==false" date-switch=""><!-- end ngIf: periodType=='A01' -->
+            <select ng-model="period_value" ng-options="year.code as year.code for year in years" ng-change="changeYear()" style="height: 32px;  width: 120px;" ng-show="deduce==true" class="ng-pristine ng-untouched ng-valid ng-hide"><option value="?" selected="selected" label=""></option></select>
+            <select ng-model="industry" ng-options="industry.code as industry.name for industry in industries" ng-change="changeIndustry(industry)" ng-show="deduce==true" style="height: 32px;  width: 120px;" class="ng-pristine ng-untouched ng-valid ng-hide"><option value="?" selected="selected" label=""></option></select>
+            <div class="selectButton" ng-click="selectBaseValue()" ng-show="rightDiv!='data_deduction'&amp;&amp;rightDiv!='trend_forecast'">查询</div>
+        </div>
+
+
+        <div class="dataCont_btn f_right" style="margin-top: -32px;">
+            <div class="btn_blue_small" ng-class="{'otherClass':rightDiv=='trend_forecast'}" ng-click="editMetric()" ng-show="show">编辑</div>
+            <div class="btn_gray_small f_left ng-hide" ng-class="{'otherClass':rightDiv=='trend_forecast'}" style="display: block" ng-click="cancel()" ng-show="!show">取消</div>
+            <div class="btn_blue_save f_left ng-hide" ng-class="{'otherClass':rightDiv=='trend_forecast'}" style="display: block" ng-show="!show" ng-click="updateMetric()">保存</div>
+            <div class="clear"></div>
+        </div>
+
+
+        <!--  右侧数据-->
+        <div class="main_tab" ng-show="rightDiv!='green_traffic' &amp;&amp; rightDiv!='data_deduction'&amp;&amp; rightDiv!='trend_forecast' ">
+            <div class="table_title">
+                <table>
+                    <tbody><tr>
+                        <th width="60">序号</th>
+                        <th>名称</th>
+                        <th width="30%">数值</th>
+                        <th width="30%">单位</th>
+                    </tr>
+                    </tbody></table>
+            </div>
+            <div class="table_main addScroll ps-container" data-ps-id="c8e94b25-90c0-32a5-6d02-9cac59719ec6">
+                <table>
+                    <tbody><!-- ngRepeat: m in metricValueList --><tr ng-repeat="m in metricValueList" ng-class="{'hasBg':$index%2==1}" class="ng-scope">
+                        <td align="center" width="60" class="ng-binding">1</td>
+                        <td align="center">
+                            <span class="ng-binding">交通基础设施建设投资额</span>
+                        </td>
+                        <td align="center" width="30%">
+                            <span ng-show="!isEdit" class="ng-binding"></span>
+                            <input ng-show="isEdit" type="text" ng-model="m.metric_value" style="display: block" class="ng-pristine ng-untouched ng-valid ng-hide">
+                        </td>
+                        <td align="center" width="30%">
+                            <span class="ng-binding">万元</span>
+                        </td>
+                    </tr><!-- end ngRepeat: m in metricValueList --><tr ng-repeat="m in metricValueList" ng-class="{'hasBg':$index%2==1}" class="ng-scope hasBg">
+                        <td align="center" width="60" class="ng-binding">2</td>
+                        <td align="center">
+                            <span class="ng-binding">GDP</span>
+                        </td>
+                        <td align="center" width="30%">
+                            <span ng-show="!isEdit" class="ng-binding"></span>
+                            <input ng-show="isEdit" type="text" ng-model="m.metric_value" style="display: block" class="ng-pristine ng-untouched ng-valid ng-hide">
+                        </td>
+                        <td align="center" width="30%">
+                            <span class="ng-binding">万元</span>
+                        </td>
+                    </tr><!-- end ngRepeat: m in metricValueList -->
+
+                    </tbody></table>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+        </div>
+        <!--  右侧数据-绿色交通-->
+        <div class="main_tab ng-hide" ng-show="rightDiv=='green_traffic'">
+            <div class="table_title">
+                <table>
+                    <tbody><tr>
+                        <th width="20%">类型名称</th>
+                        <th width="20%">指标名称</th>
+                        <th width="20%">数值</th>
+                        <th width="20%">单位</th>
+                    </tr>
+                    </tbody></table>
+            </div>
+            <div class="table_main addScroll ps-container" data-ps-id="db724dd3-5d4b-315d-de6c-bb534d7fa0a1">
+                <!-- ngRepeat: m in metricGreenValueList -->
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+        </div>
+        <!--  右侧数据-数据推演-->
+        <div class="main_tab ng-hide" ng-show="rightDiv=='data_deduction'">
+            <div class="table_title">
+                <table>
+                    <tbody><tr>
+                        <th width="20%"></th>
+                        <th width="20%" class="ng-binding">()</th>
+                        <th width="20%" class="ng-binding">()</th>
+                        <!-- ngIf: DebuceLists.length==3 -->
+                    </tr>
+                    </tbody></table>
+            </div>
+            <div class="table_main addScroll ps-container" data-ps-id="d490a007-ae53-b616-b7cb-b8a3a21a0194">
+                <table ng-show="debuceType=='season'" class="ng-hide">
+                    <tbody><!-- ngRepeat: m in season -->
+                    </tbody></table>
+                <table ng-show="debuceType=='month'" class="ng-hide">
+                    <tbody><!-- ngRepeat: m in month -->
+                    </tbody></table>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+        </div>
+        <!--  右侧数据-趋势预测-->
+        <div class="main_tab ng-hide" ng-show="rightDiv=='trend_forecast'">
+            <div class="table_title">
+                <table>
+                    <tbody><tr>
+                        <th width="20%">年份</th>
+                        <th width="20%" class="ng-binding">()</th>
+                        <th width="20%" class="ng-binding">()</th>
+                        <th width="20%" class="ng-binding">()</th>
+                        <th width="20%" class="ng-binding">()</th>
+                    </tr>
+                    </tbody></table>
+            </div>
+            <div class="table_main addScroll ps-container" data-ps-id="3e326627-d494-4fc6-e26e-c009eba9b593">
+                <table>
+                    <tbody><!-- ngRepeat: m in allYears -->
+                    </tbody></table>
+
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+        </div>
+    </div>
+</div>

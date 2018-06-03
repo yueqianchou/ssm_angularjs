@@ -1,0 +1,6462 @@
+/*弹窗*/
+.pContainer {
+    position: relative;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    height: 2000px;
+}
+
+.pop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 4;
+}
+
+.pop1 {
+    width: 218px;
+    height: 254px;
+    margin-top: -127px;
+    margin-left: -109px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.posiabs1 {
+    top: 20px;
+    left: 20px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.posiabs2 {
+    top: 20px;
+    left: 250px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.phed1 {
+    position: relative;
+    height: 89px;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: block;
+    width: 15px;
+    height: 15px;
+}
+
+.closeBtn1 {
+    background: url("../images/liz/icon1.png") no-repeat center;
+}
+
+.pIcon {
+    position: relative;
+    margin: 0 auto;
+    margin-top: -64px;
+    width: 86px;
+    height: 86px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #8d949c;
+    text-align: center;
+    z-index: 1;
+}
+
+.pIcon1 img {
+    padding: 28px 0 0 4px;
+}
+
+.affirm {
+    padding: 28px 0;
+    color: #5d6c85;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pbtnGroup {
+    text-align: center;
+}
+
+.pBtn1 {
+    display: inline-block;
+    padding: 0 20px;
+    height: 36px;
+    background: #438bfb;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.pBtn1:hover {
+    background: #357eee;
+}
+
+.marig12 {
+    margin-right: 12px;
+}
+
+.pBtn2 {
+    display: inline-block;
+    padding: 0 20px;
+    height: 36px;
+    border: 1px solid #ccd1d9;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, #f0f1f4, #e9edf3);
+    color: #5d6c85;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 36px;
+    box-sizing: border-box;
+}
+
+.pBtn2:hover {
+    background: linear-gradient(to top, #f0f1f4, #e9edf3);
+}
+
+.pIcon2 {
+    border: 1px solid #5bc18c;
+}
+
+.closeBtn2 {
+    background: url("../images/liz/icon2.png") no-repeat center;
+}
+
+.pIcon2 img {
+    padding: 25px 0 0 3px;
+}
+
+.pBtn3 {
+    display: inline-block;
+    padding: 0 34px;
+    height: 36px;
+    background: #56bf89;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: bold;
+    box-shadow: 0 2px 14px 2px #d8f0e4;
+}
+
+.pBtn3:hover {
+    background: #40ad75;
+}
+
+.pop3 {
+    width: 380px;
+    height: 230px;
+    margin-top: -115px;
+    margin-left: -190px;
+    background: #fff;
+}
+
+.posiabs3 {
+    top: 20px;
+    left: 480px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.phed3 {
+    position: relative;
+    padding: 12px;
+    overflow: hidden;
+}
+
+.phTit {
+    float: left;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.pconsult {
+    padding: 40px 34px;
+    color: #438bfb;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 36px;
+}
+
+.pbtom3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 12px 0;
+    border-top: 1px solid #d3dbe0;
+    background: #f5f7fa;
+    text-align: right;
+}
+
+.pBtn1Small {
+    display: inline-block;
+    padding: 0 16px;
+    height: 28px;
+    background: linear-gradient(to bottom, #1c70f4, #144fc8);
+    border: 1px solid #094aba;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.pBtn1Small:hover {
+    background: linear-gradient(to top, #1c70f4, #144fc8);
+}
+
+.pBtn2Small {
+    display: inline-block;
+    padding: 0 16px;
+    height: 28px;
+    border: 1px solid #ccd1d9;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, #f0f1f4, #e9edf3);
+    color: #5d6c85;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+
+.pBtn2Small:hover {
+    background: linear-gradient(to top, #f0f1f4, #e9edf3);
+}
+
+.marig8 {
+    margin-right: 8px;
+}
+
+.pop4 {
+    margin-top: -130px;
+    margin-left: -113px;
+    width: 226px;
+    height: 260px;
+    background: #fff;
+}
+
+.posiabs4 {
+    top: 20px;
+    left: 880px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.successIcon {
+    margin: 0 auto;
+    margin-top: 26px;
+    width: 48px;
+    height: 48px;
+    background: url("../images/liz/icon9.png") no-repeat center;
+}
+
+.successTxt {
+    margin: 22px 0 25px 0;
+    font-size: 18px;
+    color: #5d6c85;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pBtn1Big {
+    margin: 0 32px;
+    display: block;
+    padding: 0 20px;
+    height: 46px;
+    background: #438bfb;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 46px;
+    font-weight: bold;
+    box-shadow: 0 2px 14px 2px #d4e4fe;
+    text-align: center;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.pBtn1Big:hover {
+    background: #357eee;
+}
+
+.pop5 {
+    width: 546px;
+    height: 440px;
+    margin-top: -220px;
+    margin-left: -273px;
+    background: #fff;
+}
+
+.posiabs5 {
+    margin: 0;
+    top: 290px;
+    left: 20px;
+}
+
+.phed5 {
+    padding: 0 12px;
+    height: 41px;
+    border-bottom: 1px solid #b0b9bf;
+    background: linear-gradient(to bottom, #fff, #e9edf2);
+    line-height: 41px;
+}
+
+.reportIcon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 18px;
+    height: 14px;
+    background: url("../images/warning.png") no-repeat;
+}
+
+.reportIcon.err {
+    background: url("../images/liz/err_icon.png") no-repeat;
+}
+
+.reportInf {
+    position: relative;
+    top: 24px;
+    left: 0;
+    right: 0;
+    height: 282px;
+}
+
+.main-title-right.top52 {
+    top: 52px;
+}
+
+.errInf {
+    margin-top: 21px;
+    font-family: "微软雅黑";
+    padding: 12px;
+    color: #5d6c85;
+    font-size: 14px;
+    text-align: left;
+}
+
+.fileIcon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 15px;
+    height: 13px;
+    background: url("../images/liz/file_icon.png") no-repeat;
+}
+
+.loadFile {
+    position: relative;
+    top: 3px;
+    margin-left: 2px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../images/liz/load_icon.png") no-repeat;
+    cursor: pointer;
+}
+
+.posiabs6 {
+    margin: 0;
+    top: 290px;
+    left: 590px;
+}
+
+.errorRes {
+    margin: 20px;
+    padding: 42px;
+    border: 1px dashed #ee4646;
+    background: #faf2f2;
+}
+
+.errIcon {
+    margin: 0 auto;
+    width: 32px;
+    height: 32px;
+    background: url("../images/liz/icon6.png") no-repeat;
+}
+
+.errTxt {
+    margin-top: 12px;
+    color: #ee4646;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.verify {
+    padding: 25px 36px;
+    text-align: left;
+}
+
+.verifyTit {
+    margin-bottom: 22px;
+    font-size: 16px;
+    color: #313131;
+    font-weight: bold;
+}
+
+.verifyPara {
+    color: #676c73;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.posiabs7 {
+    margin: 0;
+    left: 20px;
+    top: 740px;
+}
+
+.verifying {
+    padding-top: 108px;
+}
+
+.verifyingIcon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: url("../images/liz/loading.gif") no-repeat center;
+}
+
+.verifyingTxt {
+    margin-top: 40px;
+    color: #8a9099;
+    font-size: 16px;
+    text-align: center;
+}
+
+.noValid .pBtn1Small, .noValid .pBtn2Small {
+    background: #a9b0ba;
+    color: #e9ecf2;
+    cursor: no-drop;
+}
+
+.pop8 {
+    margin-top: -226px;
+    margin-left: -460px;
+    width: 920px;
+    height: 450px;
+    background: #fff;
+}
+
+.posiabs8 {
+    margin: 0;
+    left: 20px;
+    top: 1200px;
+}
+
+.pCont8 {
+    position: absolute;
+    top: 43px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.pop9 {
+    margin-top: -193px;
+    margin-left: -273px;
+    width: 546px;
+    height: 386px;
+    background: #fff;
+}
+
+.posiabs9 {
+    margin: 0;
+    top: 740px;
+    left: 580px;
+}
+
+.pCont9 {
+    padding: 26px;
+    text-align: left;
+}
+
+.urgeFileTit {
+    margin-bottom: 24px;
+    color: #313131;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.urgeInf {
+    color: #5d6c85;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.urgeInf p {
+    text-indent: 28px;
+}
+
+.urgeNum {
+    color: #ee4646;
+    font-weight: bold;
+}
+
+.urgeIntro {
+    margin-top: 18px;
+    float: right;
+    color: #313131;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/*数据采集-数据报送-编辑-导入表-导入后*/
+.mainTitlef {
+    float: left;
+    margin-left: 15px;
+}
+
+.leadBtn {
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 2px;
+    height: 28px;
+    border: 1px solid #099e5f;
+    background: linear-gradient(#2dc8c4, #0fc274);
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+
+.leadBtn:hover {
+    background: linear-gradient(#0fc274, #2dc8c4);
+}
+
+.loadBtn {
+    color: #5d6c85;
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.submitReport-btom {
+    padding: 0 15px;
+    height: 123px;
+    border-top: 1px dashed #e9ecf2;
+    background: #fff;
+}
+
+.reportDetail {
+    position: relative;
+    height: 868px;
+    background: #fff;
+}
+
+.tdYear {
+    display: inline-block;
+    position: relative;
+}
+
+.tdYear .reportIcon {
+    position: absolute;
+    right: -22px;
+    top: 2px;
+}
+
+.turnPage {
+    padding: 12px 15px 10px 15px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.top46 {
+    top: 46px;
+}
+
+.tdTips {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    height: 26px;
+    width: 98px;
+    text-align: center;
+    border: 1px solid #333;
+    color: #fff;
+    line-height: 26px;
+    background: url("../images/liz/tip_bg.png") repeat;
+    box-shadow: 2px 2px 8px 2px #d1d1d1;
+}
+
+.tdTips:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    margin-top: -3px;
+    width: 7px;
+    height: 6px;
+    background: url("../images/liz/icon8.png") no-repeat center;
+    z-index: 1;
+}
+
+.formlis_sele select {
+    font-family: "微软雅黑";
+}
+
+/*2017/07/10*/
+
+/*实时监测-监测台账-列表*/
+.formHlef {
+    margin-right: 63px;
+    padding-left: 10px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.selectLi {
+    display: inline-block;
+}
+
+.selLable {
+    margin-right: 6px;
+    line-height: 28px;
+    color: #a9b0ba;
+    font-size: 14px;
+}
+
+.selectSty {
+    position: relative;
+    top: -2px;
+    height: 26px;
+    width: 134px;
+    border: 1px solid #5d5e60;
+    border-radius: 1px;
+    background: #4a4b4d;
+    color: #e9ecf2;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    line-height: 26px;
+    text-indent: 8px;
+    outline: none;
+}
+
+.marig18 {
+    margin-right: 18px;
+}
+
+.top_2 {
+    position: relative;
+    top: -2px;
+}
+
+.main_content_th.busContlef {
+    top: 2px;
+    right: 210px;
+}
+
+.main_content_td.busContlef {
+    top: 49px;
+    right: 210px;
+    bottom: 56px;
+}
+
+.bgPer20 {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.footposiabs {
+    left: 10px;
+    right: 220px;
+    text-align: center;
+    bottom: 10px;
+}
+
+.turnPageCenter {
+    padding-top: 14px;
+    display: inline-block;
+}
+
+.busContrig {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 200px;
+    bottom: 0px;
+}
+
+.busChart {
+    position: relative;
+    margin-bottom: 12px;
+    height: 276px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.busChed {
+    height: 46px;
+    border-bottom: 1px solid #000;
+    background: linear-gradient(to bottom, rgba(112, 126, 150, 0.65), rgba(62, 70, 83, 0.65));
+    color: #fff;
+    font-size: 15px;
+    line-height: 46px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.busChartPic {
+    position: absolute;
+    top: 47px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.chartTxt {
+    position: absolute;
+    top: 66px;
+    left: 54px;
+    width: 90px;
+    height: 60px;
+    text-align: center;
+    line-height: 16px;
+}
+
+.chartxt1 {
+    color: #ff4c4c;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.chartxt2 {
+    color: #fff;
+    font-size: 12px;
+    transform: scale(0.85);
+}
+
+.chartxt3 {
+    color: #438bfb;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/*数据采集-填报跟踪-暂无数据*/
+.dataNullIcon {
+    margin: 0 auto;
+    padding-top: 28px;
+    width: 120px;
+    height: 120px;
+}
+
+.dataNullTxt {
+    color: #aaa;
+    font-size: 18px;
+    text-align: center;
+}
+
+.noData {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -97px;
+    margin-left: -75px;
+    width: 150px;
+    height: 194px;
+}
+
+.noData .dataNullIcon {
+    padding-top: 0;
+    width: 150px;
+    height: 150px;
+}
+
+.noData .dataNullTxt {
+    padding-top: 10px;
+}
+
+/*规范-空白页*/
+.blankData {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -96px;
+    margin-left: -265px;
+    height: 192px;
+    width: 530px;
+}
+
+.blankIcon {
+    float: left;
+    width: 192px;
+    height: 192px;
+}
+
+.blankTxt {
+    margin: 42px 0 0 202px;
+}
+
+.blankTxtSty1 {
+    padding-bottom: 22px;
+    color: #555;
+    font-size: 22px;
+}
+
+.blankInf {
+    margin-bottom: 10px;
+    padding-left: 12px;
+    color: #999;
+    font-size: 16px;
+    background: url("../images/liz/data_type.png") no-repeat left center;
+}
+
+/*2017/07/11修改*/
+.btn_blue.middle {
+    height: 36px;
+    line-height: 36px;
+}
+
+.btn_gray.big {
+    padding: 0 50px;
+    display: inline-block;
+    height: 46px;
+    line-height: 46px;
+}
+
+.state_did.not {
+    background: #ff9c0e;
+}
+
+.taskRigChange .tdm_tit {
+    margin-bottom: 26px;
+}
+
+.taskRigChange .tdm_num {
+    margin-bottom: 46px;
+}
+
+.submison {
+    position: absolute;
+    top: 94px;
+    left: 0;
+    right: 0;
+    bottom: 170px;
+    height: auto;
+}
+
+.editTable td {
+    padding: 7px 8px;
+}
+
+.tdput {
+    position: relative;
+    height: 26px;
+    border: 1px solid #ccd1d9;
+    border-radius: 1px;
+}
+
+.tdputSty {
+    width: 100%;
+    padding: 0 10px;
+    border: none;
+    background: none;
+    outline: none;
+    box-sizing: border-box;
+    color: #5d6c85;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    line-height: 26px;
+}
+
+.tdputSty::-webkit-input-placeholder {
+    color: #5d6c85;
+}
+
+select.tdputSty {
+    margin-top: 2px;
+}
+
+.setTable {
+    position: absolute;
+    bottom: 124px;
+    left: 0;
+    right: 0;
+    padding: 8px 15px;
+}
+
+.reportLef {
+    float: left;
+    padding-top: 6px;
+}
+
+.editNew td {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.warnIcon {
+    right: -25px !important;
+    background: url("../images/liz/return_icon.png") no-repeat;
+}
+
+.fuelType {
+    position: relative;
+    cursor: pointer;
+}
+
+.fuelType.active {
+    background: #deebfe;
+}
+
+.fuelPop {
+    position: absolute;
+    top: 20px;
+    right: -6px;
+    width: 82px;
+    height: 64px;
+    border: 1px solid #ccd1d9;
+    background: #fdfeff;
+    box-shadow: 0 2px 8px 2px #d0d2d5;
+    z-index: 2;
+    display: none;
+}
+
+.fuelPop:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    margin-left: -5px;
+    width: 10px;
+    height: 10px;
+    background: url("../images/liz/tip_icon.png") no-repeat;
+}
+
+.fuelLis {
+    margin: 4px;
+}
+
+.fuelLis li {
+    height: 28px;
+    line-height: 28px;
+    color: #8a9099;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fuelLis li:hover {
+    background: #f5f6fa;
+    color: #438bfb;
+    font-weight: bold;
+}
+
+.active .fuelPop {
+    display: block;
+}
+
+.editNew td:last-child {
+    text-align: right;
+}
+
+.scheduleChange .round b {
+    color: #438bfb;
+    font-family: "Century Gothic";
+    font-weight: bold;
+}
+
+.scheduleChange .pop_send {
+    margin-top: 4px;
+    font-family: "微软雅黑";
+    font-size: 15px;
+}
+
+.scheduleChange .pop_num {
+    margin-top: 2px;
+    color: #ccd1d9;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+
+.bsNum {
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    font-family: "Century Gothic";
+}
+
+.scheduleChange .pop {
+    left: 12px;
+    top: 164px;
+}
+
+.scheduleChange .round {
+    width: 150px;
+    height: 150px;
+    background: url("../images/liz/gs_chart1.png") no-repeat;
+}
+
+.scheduleChange .round span {
+    margin-top: 46px;
+}
+
+.submisInf {
+    margin-left: 230px;
+    padding-top: 10px;
+}
+
+.submisLis li {
+    margin-top: 10px;
+    color: #8a9099;
+    font-size: 12px;
+}
+
+.subIcon {
+    margin-top: 3px;
+    float: left;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+}
+
+.subIcon1 {
+    background: #f5a93c;
+}
+
+.subIcon2 {
+    background: #b1cefc;
+}
+
+.subIcon3 {
+    background: #438bfb;
+}
+
+.subIcon4 {
+    background: #56bf89;
+}
+
+.submisTxt {
+    margin-left: 20px;
+}
+
+.subNum {
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+}
+
+.martop4 {
+    margin-top: 4px;
+}
+
+.unitRig {
+    float: right;
+    margin-right: 12px;
+}
+
+.unitLis {
+    overflow: hidden;
+}
+
+.unitLis li {
+    float: left;
+    margin-left: 12px;
+    color: #8a9099;
+    font-size: 12px;
+}
+
+.unitLis .subIcon {
+    margin-top: 17px;
+    margin-right: 4px;
+}
+
+.mform {
+    padding: 2px 0 0 6px;
+    overflow: hidden;
+}
+
+.width240 {
+    width: 240px;
+}
+
+.marig15 {
+    margin-right: 15px;
+}
+
+.checkBtn {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/liz/check.png") no-repeat;
+    vertical-align: middle;
+}
+
+.checkBtn.active {
+    background: url("../images/liz/check_active.png") no-repeat;
+}
+
+.urgeTable td {
+    text-align: center;
+
+}
+
+.fontWeight {
+    font-weight: bold;
+}
+
+.tdNumRed {
+    color: #ee4646 !important;
+    font-weight: bold;
+}
+
+td.borbtom {
+    border-bottom: 1px solid #e9ecf2;
+    background: #fff;
+}
+
+.urgeTable .btn_gray_small {
+    margin: 0 auto;
+}
+
+.histips {
+    left: 210px;
+    width: 325px;
+}
+
+.urgePop {
+    position: absolute;
+    top: 98px;
+    right: 216px;
+    width: 374px;
+    height: 220px;
+    border: 1px solid #ccd1d9;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 1px 1px 8px 1px #d9d9d9;
+    z-index: 1;
+}
+
+.urgeBtom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 14px 0;
+    border-top: 1px solid #d5dde2;
+    background: rgba(246, 247, 250, 0.9);
+    text-align: right;
+}
+
+.urgeBtom a {
+    padding: 0 14px;
+}
+
+.urgePcont {
+    padding: 28px;
+}
+
+.urgePlis li {
+    margin-bottom: 10px;
+    line-height: 28px;
+    overflow: hidden;
+}
+
+.urgePtit {
+    float: left;
+    color: #2a3240;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: pre-wrap;
+}
+
+.urgePinf {
+    float: left;
+    margin-left: 4px;
+    color: #5d6c85;
+    font-size: 14px;
+}
+
+.urgePut {
+    margin: 0 6px;
+    padding: 0 10px;
+    width: 52px;
+    height: 28px;
+    border: 1px solid #d1d6dd;
+    border-radius: 2px;
+    background: none;
+    color: #676c73;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 28px;
+    font-family: "微软雅黑";
+    outline: none;
+    box-sizing: border-box;
+}
+
+.urgePut::-webkit-input-placeholder {
+    color: #676c73;
+}
+
+/*2017/07/12修改*/
+.pBtn1Big.closep {
+    box-shadow: 0 2px 14px 2px #dbf1e6;
+}
+
+.pBtn1Big.closep:hover {
+    background: #48b37c;
+}
+
+.pop10 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -115px;
+    margin-top: -140px;
+    width: 230px;
+    height: 280px;
+    background: #fff;
+}
+
+.pop .successTxt {
+    margin: 25px 0;
+}
+
+.posiabs10 {
+    margin: 0;
+    left: 20px;
+    top: 1670px;
+}
+
+.martop35 {
+    margin-top: 35px;
+}
+
+.posiabs11 {
+    margin: 0;
+    top: 1670px;
+    left: 270px;
+}
+
+.successIcon.sure {
+    margin-top: 35px;
+    background: url("../images/liz/icon10.png") no-repeat;
+}
+
+/*【政府端】决策分析-宏观分析*/
+.settings {
+    padding-left: 0;
+    height: 56px;
+}
+
+.settingLis {
+    overflow: hidden;
+}
+
+.settingLis li {
+    float: left;
+    padding: 0 18px;
+    height: 56px;
+    background: url("../images/liz/setli_bg.png") no-repeat right bottom;
+    text-align: center;
+    cursor: pointer;
+}
+
+.settingLis li:last-child {
+    background: none;
+}
+
+.setIcon {
+    position: relative;
+    margin: 0 auto;
+    width: 34px;
+    padding-top: 6px;
+}
+
+.setTxt {
+    margin-top: -8px;
+    color: #c2cad7;
+    font-size: 12px;
+}
+
+.newsNum {
+    position: absolute;
+    top: 4px;
+    right: 3px;
+    height: 16px;
+    padding: 0 4px;
+    border-radius: 10px;
+    background: #ee4646;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+    display: inline-block;
+}
+
+.chead {
+    border-bottom: 1px solid #394558;
+}
+
+.mBlack {
+    top: 57px;
+    background: #000;
+}
+
+.hform {
+    padding-left: 10px;
+    height: 40px;
+    border-top: 1px solid #000;
+    background: #191f28;
+    line-height: 40px;
+}
+
+.formTit {
+    float: left;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.fselect {
+    margin-top: -4px;
+    width: 100px;
+    height: 26px;
+    border: 1px solid #3f495c;
+    border-radius: 1px;
+    background: #0a0e14;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: "微软雅黑";
+    color: #fff;
+    text-indent: 3px;
+    outline: none;
+}
+
+.containBig {
+    min-width: 1366px;
+    min-height: 768px;
+}
+
+.analyze {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.analyzeRig {
+    position: relative;
+    float: right;
+    width: 286px;
+    height: 100%;
+}
+
+.analyzeLef {
+    margin-right: 298px;
+    height: 100%;
+}
+
+.analyType {
+    position: relative;
+    background: #1e242e;
+}
+
+.analyType1 {
+    height: 320px;
+}
+
+.analyType2 {
+    position: absolute;
+    top: 330px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.analyzeHed {
+    padding: 0 12px;
+    height: 44px;
+    border-bottom: 1px solid #323741;
+    line-height: 44px;
+}
+
+.analyzeHtit {
+    float: left;
+    padding-left: 10px;
+    background: url("../images/liz/htit_bg.png") no-repeat left center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.analyzeInf {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 1;
+}
+
+.examBtom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 48px;
+    border-top: 1px solid #323741;
+    background: #14181f;
+}
+
+.introTips {
+    position: absolute;
+    top: 110px;
+    right: 20px;
+    padding: 8px;
+    width: 120px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #000;
+    color: #b1cefc;
+    font-size: 12px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.introTips:before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    margin-left: -6px;
+    width: 13px;
+    height: 9px;
+    background: url("../images/liz/chart_tip.png") no-repeat;
+}
+
+.tipTit {
+    margin-bottom: 4px;
+    position: relative;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.numTxt1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #438bfb;
+}
+
+.numTxt2 {
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+
+.perfh {
+    color: #fff;
+    font-size: 12px;
+}
+
+.energy {
+    padding: 0 10px;
+}
+
+.energyHed {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #323741;
+}
+
+.energyTit {
+    padding: 12px 0 8px 0;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.energyIntro {
+    color: #b1cefc;
+    font-size: 12px;
+}
+
+.introLef {
+    float: left;
+}
+
+.introLine {
+    float: left;
+    margin: 8px 18px 0 18px;
+    width: 1px;
+    height: 12px;
+    border-left: 1px solid #323741;
+}
+
+.introRig {
+    float: left;
+    margin-top: 5px;
+}
+
+.introIcon {
+    position: relative;
+    top: 2px;
+    margin-right: 2px;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url("../images/liz/h_arr.png") no-repeat;
+}
+
+.numTxt3 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #7ed320;
+}
+
+.energyLis li {
+    height: 38px;
+    border-bottom: 1px dashed #323741;
+    color: #b1cefc;
+    font-size: 12px;
+    line-height: 38px;
+    overflow: hidden;
+}
+
+.energyType {
+    float: left;
+    margin-right: 6px;
+    margin-top: 11px;
+    width: 16px;
+    height: 16px;
+    border-radius: 1px;
+    background: #0a0e14;
+    text-align: center;
+    line-height: 16px;
+    color: #9ba7ba;
+    transform: scale(0.9);
+}
+
+.power {
+    float: left;
+    width: 38px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.energyNum {
+    float: left;
+    margin-right: 4px;
+    width: 50px;
+    text-align: center;
+}
+
+.energyUnit {
+    float: left;
+    width: 58px;
+}
+
+.energyPer {
+    float: left;
+}
+
+.perNum {
+    color: #fff;
+}
+
+.space {
+    position: relative;
+    float: left;
+    width: 44%;
+    height: 100%;
+    background: #1e242e;
+}
+
+.norm {
+    position: relative;
+    margin-left: 45%;
+    height: 100%;
+}
+
+.spaceHrig {
+    float: right;
+    margin-top: 8px;
+}
+
+.htabLis {
+    overflow: hidden;
+    border: 1px solid #000;
+}
+
+.htabLis li {
+    float: left;
+    padding: 0 10px;
+    height: 26px;
+    border: 1px solid #383f49;
+    border-right: 1px solid #000;
+    border-left: 1px solid #383f49;
+    color: #9ba7ba;
+    font-size: 14px;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.htabLis li:last-child {
+    border-right: 1px solid #383f49;
+}
+
+.htabLis li.active, .htabLis li:hover {
+    background: #386cbe;
+    color: #fff;
+    font-weight: bold;
+}
+
+.spaceInf {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+.spaceTips {
+    position: absolute;
+    top: 34%;
+    left: 40px;
+    padding: 8px;
+    width: 190px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.closeTip {
+    float: right;
+    width: 10px;
+    height: 10px;
+    background: url("../images/liz/tip_close.png") no-repeat;
+}
+
+.spaceTipli {
+    margin-top: 5px;
+    color: #9ba7ba;
+    font-size: 12px;
+}
+
+.normInf {
+    position: relative;
+    height: 60%;
+    background: #1e242e;
+}
+
+.industry {
+    position: absolute;
+    top: 61.7%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1e242e;
+}
+
+.padtop0 {
+    padding-top: 0;
+}
+
+.normCont {
+    padding: 8px;
+    border-bottom: 1px solid #323741;
+    background: #14181f;
+}
+
+.normLis {
+    overflow: hidden;
+    margin-left: -1.65%;
+}
+
+.normLis li {
+    float: left;
+    margin-left: 1.65%;
+    height: 94px;
+    width: 15%;
+    border-radius: 5px;
+    background: #1e242e;
+    text-align: center;
+}
+
+.normTxt1 {
+    padding: 12px 0 6px 0;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.normTxt3 {
+    padding-top: 6px;
+    color: #b1cefc;
+    font-size: 12px;
+}
+
+.normChart {
+    position: absolute;
+    top: 157px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 8px;
+}
+
+.menuPad .topMenuLi {
+    padding-left: 12px;
+    padding-right: 12px;
+    min-width: 76px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media screen and (min-width: 1700px) {
+    .norm {
+        margin-left: 44.8%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .norm {
+        margin-left: 45.2%;
+    }
+}
+
+/*2017/07/24新增*/
+
+/*决策分析-行业分析-对比分析*/
+.hyContain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 1366px;
+    overflow: hidden;
+}
+
+.logoNew {
+    margin: 16px 0 0 12px;
+    float: left;
+    width: 502px;
+    height: 24px;
+    background: url("../images/liz/h_logo.png") no-repeat;
+}
+
+.business {
+    top: 42px;
+    overflow: hidden;
+}
+
+.busLeft {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 90px;
+    bottom: 10px;
+    background: #323741;
+}
+
+.busRight {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.busRform {
+    padding: 0 16px 0 10px;
+    height: 42px;
+    border-bottom: 1px solid #323741;
+    background: #191f28;
+    line-height: 42px;
+}
+
+.flolef {
+    float: left;
+}
+
+.busRforig {
+    float: right;
+    color: #9ba7ba;
+    font-size: 14px;
+}
+
+.busNum {
+    color: #438bfb;
+    font-weight: bold;
+}
+
+.analyList {
+    position: absolute;
+    top: 41px;
+    left: -19px;
+    right: -19px;
+    border: 1px solid #323741;
+    background: #29303b;
+    z-index: 2;
+}
+
+.anayName .analyList li {
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.anayName .analyList li:hover {
+    background: #14181f;
+    color: #438bfb;
+    font-weight: normal;
+}
+
+.busRcont {
+    position: absolute;
+    top: 52px;
+    left: 10px;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.busRcrig {
+    float: right;
+    width: 424px;
+}
+
+.busRcLi {
+    height: 286px;
+    background: #191f28;
+    border: 1px solid #323741;
+}
+
+.marbtom10 {
+    margin-bottom: 10px;
+}
+
+.moreBtn {
+    float: right;
+    margin-top: 20px;
+    width: 16px;
+    height: 4px;
+    background: url("../images/liz/list_btn.png") no-repeat;
+}
+
+.busRcIntro {
+    padding: 0 12px;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #323741;
+    background: #262b35;
+    font-size: 14px;
+    color: #9ba7ba;
+    overflow: hidden;
+}
+
+.florig {
+    float: right;
+}
+
+.circuit {
+    float: left;
+    margin: -4px 10px 0 6px;
+}
+
+.cirIcon {
+    position: relative;
+    top: -2px;
+    margin: 0 6px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.cirIcon1 {
+    background: #438bfb;
+}
+
+.cirIcon2 {
+    background: #7ed320;
+}
+
+.numLine {
+    position: relative;
+    margin-right: 3px;
+    top: 2px;
+    color: #ee4646;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "Century Gothic";
+}
+
+.busRcInf {
+    padding: 18px 19px 0 19px;
+}
+
+.busRcInflis {
+    margin-left: -18px;
+}
+
+.busRcInflis > li {
+    float: left;
+    margin-left: 18px;
+    width: 114px;
+    height: 180px;
+    text-align: center;
+}
+
+.busPerNum {
+    margin-bottom: 8px;
+    color: #8a9099;
+    font-size: 12px;
+    transform: scale(0.95);
+}
+
+.busRchart {
+    position: relative;
+    width: 114px;
+    height: 64px;
+}
+
+.rChartTxt {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    right: 0;
+    color: #b1cefc;
+}
+
+.route {
+    font-size: 16px;
+}
+
+.numRoute {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.bias {
+    margin: 0 auto;
+    width: 86px;
+    padding: 3px 0 10px 0;
+    border-bottom: 1px solid #323741;
+    font-size: 14px;
+}
+
+.addFh {
+    color: #438bfb;
+    font-size: 16px;
+}
+
+.delFh {
+    color: #fd3f2f;
+    font-size: 16px;
+}
+
+.biasNum {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.biasExam {
+    margin-top: 8px;
+    margin-left: 16px;
+    color: #9ba7ba;
+    font-size: 12px;
+    text-align: left;
+}
+
+.carType {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.carId {
+    font-size: 21px;
+    font-weight: bold;
+    color: #438bfb;
+}
+
+.red {
+    color: #fd3f2f;
+}
+
+.busRclef {
+    margin-right: 434px;
+}
+
+.busRlefLi {
+    position: relative;
+    height: 224px;
+    background: #191f28;
+    border: 1px solid #323741;
+}
+
+.busRinLef {
+    float: left;
+    width: 266px;
+    height: 100%;
+    border-right: 1px solid #323741;
+}
+
+.energyConsum {
+    margin: 0 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #323741;
+}
+
+.busRcinHed {
+    padding: 7px 0;
+    color: #b1cefc;
+    font-size: 12px;
+}
+
+.busRintit {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.busRinlis {
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.busRinlis li {
+    float: left;
+    width: 50%;
+    padding-bottom: 4px;
+    box-sizing: border-box;
+}
+
+.busRinlis li:first-child {
+    border-right: 1px solid #323741;
+}
+
+.busRinlis li:last-child {
+    padding-left: 22px;
+}
+
+.busRinStat {
+    color: #b1cefc;
+    font-size: 12px;
+}
+
+.inStatNum {
+    margin-right: 5px;
+    color: #438bfb;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.statProcess {
+    margin-top: 8px;
+    position: relative;
+    width: 82px;
+    height: 10px;
+    background: #323741;
+}
+
+.statPerBlue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #4390fb, #43cdfb);
+}
+
+.statPerBlue1 {
+    width: 8px;
+}
+
+.statPerBlue2 {
+    width: 28px;
+}
+
+.statPerBlue3 {
+    width: 11px;
+}
+
+.green {
+    color: #7ed320;
+}
+
+.statPerGreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #57bf87, #7cd225);
+}
+
+.statPerGreen1 {
+    width: 16px;
+}
+
+.statPerGreen2 {
+    width: 32px;
+}
+
+.statPerGreen3 {
+    width: 20px;
+}
+
+.noBorbtom {
+    border-bottom: none;
+}
+
+.busRinChart {
+    position: absolute;
+    top: 0;
+    left: 267px;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+.height112 {
+    height: 112px;
+}
+
+/*决策分析-行业分析-统计分析-结构分析*/
+.busRforLef {
+    float: left;
+    margin-left: -10px;
+}
+
+.tabLis {
+    overflow: hidden;
+}
+
+.tabLis li {
+    float: left;
+    padding: 0 16px;
+    height: 42px;
+    line-height: 42px;
+    color: #8a9099;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.tabLis li.active, .tabLis li:hover {
+    background: #323741;
+    color: #fff;
+    font-weight: bold;
+}
+
+.tabContli {
+    position: relative;
+    display: none;
+    color: #fff;
+    height: 100%;
+    min-height: 590px;
+}
+
+.construct {
+    height: 100%;
+    border: 1px solid #323741;
+    border-radius: 1px;
+    background: #191f27;
+    box-sizing: border-box;
+}
+
+.consLeft {
+    float: left;
+    width: 170px;
+    height: 100%;
+    border-right: 1px solid #323741;
+}
+
+.consCenter {
+    width: 230px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.consRight {
+    margin-left: 402px;
+    height: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.consLefLis {
+    height: 100%;
+}
+
+.consLefLis li {
+    position: relative;
+    height: 25%;
+    border-bottom: 1px solid #323741;
+    box-sizing: border-box;
+}
+
+.consLefLis li:last-child {
+    border-bottom: none;
+}
+
+.consLefLis li:first-child:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -2px;
+    margin-top: -8px;
+    width: 11px;
+    height: 16px;
+    background: url("../images/liz/jc_trigon.png") no-repeat;
+    z-index: 2;
+}
+
+.consInfcent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+
+.consIcon {
+    margin: 0 auto;
+    width: 38px;
+}
+
+.consTxt {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #8a9099;
+}
+
+.conSear {
+    padding: 0 6px;
+    height: 26px;
+    border: 1px solid #3f495c;
+    border-radius: 1px;
+    background: #0a0e14;
+}
+
+.searPut {
+    padding-right: 18px;
+    width: 100%;
+    line-height: 23px;
+    border: none;
+    background: url("../images/liz/jc_search.png") no-repeat right center;
+    outline: none;
+    font-size: 14px;
+    color: #fff;
+    font-family: "微软雅黑";
+    box-sizing: border-box;
+}
+
+.searPut::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.routShow {
+    margin: 10px 0;
+    color: #9ba7ba;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.routBtngroup {
+    float: right;
+}
+
+.routBtn {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.routBtn1 {
+    margin-right: 4px;
+    background: url("../images/liz/jc_btn1.png") no-repeat;
+}
+
+.routBtn2 {
+    background: url("../images/liz/jc_btn2.png") no-repeat;
+}
+
+.carLis {
+    overflow: hidden;
+    margin-left: -8px;
+}
+
+.carLis li {
+    position: relative;
+    float: left;
+    margin-left: 9px;
+    margin-bottom: 10px;
+    height: 24px;
+    width: 60px;
+    border: 1px solid #000;
+    border-radius: 1px;
+    background: #29303b;
+    line-height: 24px;
+    text-align: center;
+    color: #9ba7ba;
+    font-size: 12px;
+}
+
+.carLis li.active {
+    border: 1px solid #438bfb;
+    color: #438bfb;
+}
+
+.carLis li.active:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 18px;
+    height: 14px;
+    background: url("../images/liz/jc_checked.png") no-repeat;
+}
+
+.consRlis {
+    height: 100%;
+}
+
+.consRlis li {
+    position: relative;
+    margin-bottom: 1%;
+    height: 23.7%;
+    border: 1px solid #323741;
+    box-sizing: border-box;
+}
+
+.consRlis li:last-child {
+    margin-bottom: 0;
+}
+
+.consRliTit {
+    position: relative;
+    float: left;
+    width: 46px;
+    height: 100%;
+    border-right: 1px solid #323741;
+    background: #14181f;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.consTxtCent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -9px;
+    height: 76px;
+    margin-top: -38px;
+    width: 18px;
+    text-align: center;
+}
+
+.consRliChart {
+    position: absolute;
+    top: 0;
+    left: 47px;
+    right: 0;
+    bottom: 0;
+    padding-left: 8px;
+}
+
+.titTop1 {
+    height: 60px;
+    margin-top: -30px;
+}
+
+.titTop2 {
+    height: 94px;
+    margin-top: -47px;
+}
+
+/*强度分析*/
+.qdconsRlis .consRliTit {
+    width: 57px;
+}
+
+.qdconsRlis .consRliChart {
+    left: 58px;
+}
+
+.qdconsRlis .consTxtCent {
+    width: 36px;
+    margin-left: -18px;
+}
+
+.firRow {
+    float: left;
+    width: 18px;
+}
+
+.padtop7 {
+    padding-top: 7px;
+}
+
+.padtop20 {
+    padding-top: 20px;
+}
+
+/*总量分析*/
+.gross {
+    overflow: hidden;
+    margin-left: -1%;
+}
+
+.gross li {
+    float: left;
+    margin-left: 1%;
+    width: 24%;
+    height: 104px;
+    border: 1px solid #323741;
+    border-radius: 1px;
+    background: #191f28;
+    box-sizing: border-box;
+}
+
+.grossLeft {
+    float: left;
+    padding-top: 33px;
+    width: 29%;
+    height: 100%;
+    border-right: 1px solid #323741;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.grossRight {
+    position: relative;
+    margin-left: 29%;
+    padding-left: 14px;
+}
+
+.grossTit {
+    padding: 16px 0 10px 0;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.grossInf {
+    font-size: 12px;
+    color: #b1cefc;
+}
+
+.grossNum {
+    margin-right: 4px;
+    color: #56bf89;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.listBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 28px;
+    background: url("../images/liz/zl_icon5.png") no-repeat center;
+}
+
+.listBtn:hover {
+    background: url("../images/liz/zl_icon5h.png") no-repeat center;
+}
+
+.txtColor2 {
+    color: #1ba3cb;
+}
+
+.txtColor3 {
+    color: #fe6091;
+}
+
+.txtColor4 {
+    color: #438bfb;
+}
+
+.trend {
+    position: absolute;
+    top: 114px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #323741;
+    border-radius: 1px;
+    background: #191f28;
+}
+
+.perAnnum.marginNew {
+    margin-right: 0;
+    margin-top: 8px;
+}
+
+.trendCont {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.trendClef {
+    float: left;
+    width: 190px;
+    height: 100%;
+    border-right: 1px solid #323741;
+}
+
+.trendCRig {
+    position: absolute;
+    top: 0;
+    left: 191px;
+    right: 0;
+    bottom: 0;
+    padding: 16px;
+}
+
+.trendLis {
+    margin: 0 10px;
+    height: 100%;
+}
+
+.trendLis li {
+    position: relative;
+    height: 50%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.trendLis li:first-child {
+    border-bottom: 1px dashed #323741;
+}
+
+.trendDetail {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -67px;
+    height: 134px;
+}
+
+.trendTxt1 {
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.trendTxt2 {
+    margin-top: 24px;
+    font-size: 14px;
+    color: #b1cefc;
+}
+
+.trenTips {
+    position: absolute;
+    top: 38%;
+    left: 40%;
+    padding: 8px;
+    width: 140px;
+    height: 60px;
+    border: 1px solid #000;
+    background: #191f28;
+    font-size: 12px;
+    color: #b1cefc;
+    text-align: center;
+    line-height: 18px;
+    box-sizing: border-box;
+}
+
+.trenTips:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    width: 14px;
+    height: 9px;
+    background: url("../images/liz/zl_tip.png") no-repeat;
+}
+
+.quanNum {
+    color: #438bfb;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.perIcon {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url("../images/liz/h_arr.png") no-repeat;
+}
+
+.risePer {
+    position: relative;
+    top: 1px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*2017/07/25新增*/
+
+/*决策分析-行业分析-对比分析-线路分析列表*/
+.dataAnalyze_popup.circuitPop {
+    margin-left: -460px;
+    margin-top: -293px;
+    width: 920px;
+    height: 586px;
+}
+
+.cirPcont {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    right: 0;
+    bottom: 56px;
+}
+
+.cirPfoot {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 56px;
+}
+
+.page.pageNew {
+    left: 12px;
+    right: 12px;
+}
+
+.pageNew .selTxt {
+    color: #fff !important;
+}
+
+.pageSm {
+    float: right;
+}
+
+.pageNew .page_turn li {
+    background: #29303b;
+    border: 1px solid #000;
+}
+
+.pageNew .page_turn li.active, .pageNew .page_turn li:hover {
+    color: #9ba7ba;
+}
+
+.preIcon {
+    display: inline-block;
+    width: 6px;
+    height: 9px;
+    background: url("../images/liz/pre.png") no-repeat center;
+}
+
+.nextIcon {
+    display: inline-block;
+    width: 6px;
+    height: 9px;
+    background: url("../images/liz/next.png") no-repeat center;
+}
+
+.page_turn li:hover .preIcon {
+    background: url("../images/liz/pre_h.png") no-repeat center;
+}
+
+.page_turn li:hover .nextIcon {
+    background: url("../images/liz/next_h.png") no-repeat center;
+}
+
+.preLi:hover, .nextLi:hover {
+    background: #29303b !important;
+}
+
+.page_leaf input.pagePut {
+    margin-right: 10px;
+    background: #0a0e14;
+    border: 1px solid #3f495c;
+    color: #fff;
+}
+
+.btn_gray_small.goBtn {
+    margin-left: 0;
+    background: #366bbc;
+    border: 1px solid #4486cd;
+    color: #fff;
+}
+
+.cirPformLi {
+    padding: 10px;
+    border-bottom: 1px solid #1e242e;
+    overflow: hidden;
+}
+
+.martop0 {
+    margin-top: 0 !important;
+}
+
+.martop1 {
+    margin-top: 1px;
+}
+
+.width190 {
+    width: 190px;
+}
+
+.exportBtn {
+    height: 24px;
+    padding: 0 10px;
+    background: #366bbc;
+    border: 1px solid #4486cd;
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+}
+
+.exportBtn:hover {
+    background: #2c60af;
+}
+
+.marChange {
+    margin-right: 12px;
+    margin-top: 4px;
+}
+
+.cirPinf {
+    position: absolute;
+    top: 106px;
+    left: 12px;
+    right: 12px;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+.cirThead {
+    border: 1px solid #323741;
+    border-top: 2px solid #323741;
+}
+
+.cirThead tr {
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    color: #9ba7ba;
+    text-align: center;
+}
+
+.cirPdetail {
+    position: absolute;
+    top: 43px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    border: 1px solid #323741;
+}
+
+.cirPtbody {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+.cirPtbody tr td {
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.cirPtbody tr:nth-child(2n+1) td {
+    border-right: 1px solid #323741;
+}
+
+.cirPtbody tr td:last-child {
+    font-weight: bold;
+    border-right: none;
+}
+
+.tdred {
+    color: #ee4646;
+}
+
+.cirPtbody tr:nth-child(2n) {
+    background: #323741;
+}
+
+.tdblue {
+    color: #438bfb;
+}
+
+/*决策分析-企业分析*/
+.qyAnalyLef {
+    position: relative;
+    float: left;
+    width: 39%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.qyAnalyRig {
+    position: relative;
+    margin-left: 39.8%;
+    padding: 10px;
+    height: 100%;
+    box-sizing: border-box;
+    background: #1e242e;
+}
+
+.profess {
+    height: 262px;
+    background: #1e242e;
+}
+
+.normPadding {
+    padding: 10px 10px 0 10px;
+    border-bottom: none;
+}
+
+.qyNormlis {
+    margin-left: -1.97%;
+}
+
+.qyNormlis li {
+    margin-bottom: 10px;
+    margin-left: 1.97%;
+    width: 18%;
+}
+
+.qyRank {
+    position: absolute;
+    top: 274px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1e242e;
+}
+
+.qyRankCont {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.qyTablehed tr {
+    height: 38px;
+    border-bottom: 1px solid #323741;
+    color: #9ba7ba;
+    font-size: 14px;
+    text-align: center;
+}
+
+.qyRankInf {
+    position: absolute;
+    top: 39px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.qyTbody tr {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px dashed #323741;
+    color: #b1cefc;
+    font-size: 12px;
+    text-align: center;
+}
+
+.qyTbody tr:last-child {
+    border-bottom: none;
+}
+
+.numType {
+    display: inline-block;
+    padding: 0 4px;
+    border-radius: 1px;
+    height: 15px;
+    background: #3d4654;
+    color: #fff;
+    line-height: 15px;
+}
+
+.fontHei {
+    color: #fff;
+    font-weight: bold;
+}
+
+.perBg {
+    position: relative;
+    height: 10px;
+    background: #323741;
+    border-radius: 1px;
+}
+
+.perInf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+}
+
+.perbg1 {
+    background: linear-gradient(to right, #ff2366, #c738a6, #8f4ce6);
+}
+
+.perbg2 {
+    background: linear-gradient(to right, #facd15, #fb8822, #fd442e);
+}
+
+.perbg3 {
+    background: linear-gradient(to right, #7ed322, #68c958, #58c085);
+}
+
+.perbg4 {
+    background: linear-gradient(to right, #00ebff, #1dc1fd, #428dfb);
+}
+
+.perWidth1 {
+    width: 80%;
+}
+
+.perWidth2 {
+    width: 70%;
+}
+
+.perWidth3 {
+    width: 60%;
+}
+
+.perWidth4 {
+    width: 50%;
+}
+
+.perWidth5 {
+    width: 40%;
+}
+
+.perWidth6 {
+    width: 30%;
+}
+
+.perWidth7 {
+    width: 20%;
+}
+
+.scaleBtn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 48px;
+    height: 178px;
+    background: url("../images/liz/qy_btn.png") no-repeat;
+}
+
+.qyExam {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    width: 119px;
+    height: 268px;
+    background: url("../images/liz/qy_exam.png") no-repeat;
+}
+
+.qyChartips {
+    padding: 0;
+    top: 32%;
+    left: 45%;
+    width: 254px;
+    height: auto;
+}
+
+.qyTipHed {
+    padding: 0 12px;
+    height: 40px;
+    border-bottom: 1px solid #323741;
+    line-height: 40px;
+    text-align: left;
+}
+
+.qyThedLef {
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.martop15 {
+    margin-top: 15px;
+}
+
+.qyTipInf {
+    padding: 4px 0;
+    line-height: 28px;
+}
+
+.qyTiplis li {
+    overflow: hidden;
+    font-size: 14px;
+    color: #9ba7ba;
+}
+
+.qyTipLef {
+    float: left;
+    width: 100px;
+    text-align: right;
+}
+
+.qyTipRig {
+    margin-left: 110px;
+    text-align: left;
+}
+
+.qyTbody tr td:nth-child(2) {
+    text-align: left;
+}
+
+.active .consTxt, .consLefLis li:hover .consTxt {
+    color: #fff;
+}
+
+.consLefLis li.active, .consLefLis li:hover {
+    background: #2f353f;
+}
+
+/*镇江绿色交通综合管理服务平台*/
+.hLogo {
+    float: left;
+    margin: 12px 0 0 12px;
+    width: 485px;
+    height: 35px;
+    background: url("../images/z_logo.png") no-repeat center;
+}
+
+.ruleTable td {
+    padding: 11px 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+td.bgWhite {
+    background: #fff;
+    border-bottom: 1px solid #dcdfe5;
+}
+
+.tdBorbtom {
+    border-bottom: 1px solid #dcdfe5;
+}
+
+.taskTitNew {
+    background: linear-gradient(to bottom, #fafbfc, #ebeef3);
+    border-bottom: 1px solid #929db0;
+}
+
+.taskTitNew .taskTxt {
+    color: #2a3240;
+}
+
+.state_no {
+    background: #ff9c0e;
+    color: #fff;
+    font-weight: bold;
+}
+
+.taskLeft {
+    border: 1px solid #929db0;
+    box-shadow: 0 0 8px 2px #b7c4d9;
+}
+
+.taskRigLis ul li {
+    border: 1px solid #929db0;
+    box-shadow: 0 0 8px 2px #b7c4d9;
+    box-sizing: border-box;
+}
+
+.dataIcon {
+    float: right;
+    margin: 15px 4px 0 0;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url("../images/liz/clock_icon.png") no-repeat;
+}
+
+.taskMar .tdm_tit {
+    margin-bottom: 30px;
+}
+
+.taskMar .tdm_num {
+    margin-bottom: 42px;
+}
+
+.main_tab.top44 {
+    top: 44px;
+}
+
+.mainBorder {
+    border: 1px solid #9ca7ba;
+}
+
+.numCircle {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    height: 14px;
+    padding: 0 4px;
+    border-radius: 8px;
+    line-height: 14px;
+    background: #929dad;
+    box-shadow: 2px -2px 2px 1px #737c8c inset;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.active .numCircle {
+    background: linear-gradient(to bottom, #30c9ce, #0fc274);
+    box-shadow: none;
+}
+
+.tabTable td {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.table_main tr:hover {
+    background: #dae6f9;
+}
+
+.table_main tr:hover td {
+    color: #1d2532;
+}
+
+.filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+}
+
+.main-title-right img:last-child.marlef0 {
+    margin-left: 0;
+}
+
+.unitPutsty {
+    padding: 0 6px;
+    height: 28px;
+    width: 194px;
+    border: 1px solid #ccd1d9;
+    border-radius: 1px;
+    background: #fff;
+    color: #313131;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    outline: none;
+    box-sizing: border-box;
+    line-height: 28px;
+}
+
+.unitPutsty::-webkit-input-placeholder {
+    color: #313131;
+}
+
+.dataWrite td {
+    padding-left: 20px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+td.txtLeft {
+    text-align: left;
+}
+
+td.txtCenter {
+    text-align: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.foilTxt {
+    margin-left: 26px;
+}
+
+.height498 {
+    height: 498px;
+}
+
+.zancun {
+    background: linear-gradient(#e8edf3, #c0c5cf);
+}
+
+.zancun:hover {
+    background: linear-gradient(#c0c5cf, #e8edf3);
+
+}
+
+.mainTitNew {
+    background: linear-gradient(to bottom, #f1f5f9, #d8dce1);
+}
+
+.interface {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    bottom: 28px;
+    overflow: hidden;
+}
+
+.interLi {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.interLef {
+    border-right: 1px dashed #ccd1d9;
+}
+
+.interInf {
+    position: absolute;
+    top: 50%;
+    left: 116px;
+    right: 116px;
+    margin-top: -126px;
+    text-align: center;
+    height: 252px;
+}
+
+.interTit {
+    color: #555;
+    font-size: 22px;
+}
+
+.interLis li {
+    margin-bottom: 18px;
+    padding-left: 12px;
+    background: url("../images/liz/dot.png") no-repeat left 7px;
+    display: inline-block;
+    color: #999;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.martop76 {
+    margin-top: 76px;
+}
+
+.medium {
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 26px;
+}
+
+.martop36 {
+    margin-top: 36px;
+}
+
+.tabNav {
+    top: 56px;
+    border-bottom: none;
+}
+
+.tabBtngroup {
+    float: right;
+}
+
+.bgPadding {
+    padding: 5px 0;
+    background: #fff;
+}
+
+.moreForm {
+    margin: 45px 15px 0 15px;
+    padding: 10px 0;
+    border: 1px solid #ccd1d9;
+    background: #f5f7fa;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.mic li:first-child.borlefColor {
+    border-left: 1px solid #ccd1d9;
+}
+
+.padding0 {
+    padding: 0;
+}
+
+.tabNavlis li.active {
+    background: #f5f7fa;
+}
+
+.btn_gray_small.padding15.marig5 {
+    margin-right: 5px;
+}
+
+.left15 {
+    left: 15px;
+}
+
+.multiRowHed tr {
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.unitTxt {
+    color: #8a9099;
+}
+
+.table_title.height48 {
+    height: 48px;
+}
+
+.multiRowHed tr th {
+    border-right: 1px solid #d7dbe1;
+}
+
+td.noBorbtom {
+    border-bottom: none;
+}
+
+.multiRowHed {
+    border-left: 1px solid #d7dbe1;
+}
+
+.padLef10td td {
+    padding-left: 10px;
+}
+
+.height466 {
+    height: 466px;
+}
+
+.delTip {
+    padding: 40px 0;
+    color: #fb437b;
+}
+
+.closePbt {
+    border: 1px solid #094bbb;
+    background: linear-gradient(to bottom, #1c71f5, #134cc4);
+    box-sizing: border-box;
+}
+
+.closePbt:hover {
+    background: linear-gradient(to top, #1c71f5, #134cc4);
+
+}
+
+.zPosiabs1 {
+    margin: 0;
+    top: 20px;
+    left: 20px;
+}
+
+.zPosiabs2 {
+    margin: 0;
+    top: 20px;
+    left: 420px;
+}
+
+.zpop3 {
+    width: 550px;
+    height: 240px;
+    margin-top: -120px;
+    margin-left: -275px;
+    background: #fff;
+}
+
+.zPosiabs3 {
+    margin: 0;
+    top: 20px;
+    left: 690px;
+}
+
+.zPcont {
+    padding: 28px 22px;
+    overflow: hidden;
+}
+
+.zPcontRig {
+    float: right;
+    padding: 10px 12px;
+    width: 126px;
+    height: 84px;
+    border: 1px dashed #7fa2d6;
+    background: #f5f7fa;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.addIcon {
+    margin: 0 auto;
+    width: 25px;
+    height: 26px;
+    background: url("../images/liz/add_process.png") no-repeat;
+}
+
+.addProcess {
+    margin-top: 4px;
+    color: #555;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.zPcontLef {
+    margin-right: 140px;
+}
+
+.width226 {
+    width: 226px;
+}
+
+.marig6 {
+    margin-right: 6px;
+}
+
+.martop28 {
+    margin-top: 28px;
+}
+
+.formlis_sele select.proType {
+    color: #888;
+}
+
+.formlis_sele select.proType::-webkit-input-placeholder {
+    color: #888;
+}
+
+.zpop4 {
+    width: 550px;
+    height: 346px;
+    margin-top: -173px;
+    margin-left: -275px;
+    background: #fff;
+}
+
+.zPosiabs4 {
+    margin: 0;
+    top: 370px;
+    left: 20px;
+}
+
+.zPcont4 {
+    padding: 24px 20px;
+}
+
+.zpContlis {
+    padding: 0 10px;
+    border: 1px dashed #7fa2d6;
+    background: #f5f7fa;
+}
+
+.zpContlis li {
+    padding: 23px 0;
+    border-bottom: 1px dashed #7fa2d6;
+    background: url("../images/liz/pop_list.png") no-repeat left center;
+    color: #5d6c85;
+    font-size: 16px;
+    font-weight: bold;
+    text-indent: 10px;
+    text-align: left;
+}
+
+.zpBtn {
+    color: #438bfb;
+}
+
+.zpContlis li:last-child {
+    border-bottom: none;
+}
+
+.zpop5 {
+    width: 546px;
+    height: 410px;
+    margin-top: -205px;
+    margin-left: -273px;
+    background: #fff;
+}
+
+.zPosiabs5 {
+    margin: 0;
+    top: 350px;
+    left: 640px;
+}
+
+.tdBorder {
+    border-left: 1px solid #ccd1d9;
+    border-right: 1px solid #ccd1d9;
+}
+
+.popTable td {
+    padding: 7px 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.popTable .btn_gray_small {
+    margin: 0 auto;
+}
+
+.tdBorder th {
+    border-right: 1px solid #ccd1d9;
+    box-sizing: border-box;
+}
+
+.tdBorder th:last-child {
+    border-right: none;
+}
+
+.pTdput {
+    padding: 6px;
+    width: 100%;
+    height: 26px;
+    border: 1px solid #ccd1d9;
+    border-radius: 1px;
+    font-size: 14px;
+    color: #5d6c85;
+    background: #fff;
+    outline: none;
+    box-sizing: border-box;
+    line-height: 26px;
+}
+
+.pTdput::-webkit-input-placeholder {
+    color: #5d6c85;
+}
+
+.bottom56 {
+    bottom: 56px;
+}
+
+.table_title.top42 {
+    top: 42px;
+}
+
+.tablePosi {
+    top: 87px;
+    bottom: 12px;
+}
+
+.zpAdd {
+    float: right;
+    margin-right: 15px;
+    margin-top: 6px;
+}
+
+.relativeTop2 {
+    position: relative;
+    top: 2px;
+}
+
+.shTable {
+    text-align: center;
+}
+
+.sendBck {
+    position: relative;
+    top: 1px;
+    margin-left: 8px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/liz/send_back.png") no-repeat;
+}
+
+.foilIcon {
+    display: inline-block;
+    margin-left: 8px;
+    width: 18px;
+    height: 14px;
+    background: url("../images/warning.png") no-repeat center;
+}
+
+.right_12 {
+    right: -12px;
+}
+
+.height336 {
+    height: 336px;
+}
+
+td.paddtop0 {
+    padding-top: 0;
+}
+
+.letterSpacing3_2 {
+    letter-spacing: 3.2px;
+}
+
+.shMainTab {
+    bottom: 0;
+    min-height: 640px;
+    margin-bottom: 10px;
+}
+
+/*2017/07/31新增*/
+
+/*【政府端】实时监测-港口*/
+.hLogo2 {
+    margin-top: 10px;
+    width: 485px;
+    height: 37px;
+    background: url("../images/liz/s_logo.png") no-repeat center;
+}
+
+.main.nobg {
+    background: none;
+}
+
+.mapBg {
+    background: url("../images/liz/map_bg.jpg") no-repeat center;
+    background-size: cover;
+    min-width: 1366px;
+    min-height: 768px;
+}
+
+.sleftMenu {
+    width: 80px;
+    margin: 14px;
+}
+
+.sLeftMenulis li {
+    position: relative;
+    margin-bottom: 6px;
+    width: 80px;
+    height: 80px;
+    background: #001e4a;
+    border: 1px solid #122c53;
+    border-radius: 1px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.sLeftMenulis li.active, .sLeftMenulis li:hover {
+    border: 1px solid #22b6ff;
+    background: linear-gradient(to bottom, #198aff, #0b60d4);
+}
+
+.sLeftMenulis li.active:before, .sLeftMenulis li:hover:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: -7px;
+    width: 8px;
+    height: 12px;
+    background: url("../images/liz/menu_arr.png") no-repeat;
+    display: block;
+}
+
+.sMenuIcon {
+    padding-top: 14px;
+}
+
+.sMenuTxt {
+    margin-top: 6px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.jcMap {
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    right: 406px;
+    bottom: 30px;
+}
+
+.jcmapExam {
+    position: absolute;
+    bottom: 8px;
+    left: 12px;
+    width: 40px;
+    height: 244px;
+}
+
+.rightCont {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    bottom: 14px;
+    width: 282px;
+    border: 1px solid #0c56a7;
+    background: #001b45;
+    border-radius: 3px;
+}
+
+.slideBtn {
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    margin-top: -33px;
+    width: 16px;
+    height: 66px;
+    background: url("../images/liz/slide_btn.png") no-repeat;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.slideIcon {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    left: 6px;
+    width: 6px;
+    height: 8px;
+    background: url("../images/liz/slide_icon1.png") no-repeat;
+}
+
+.rigContHed {
+    padding: 0 8px;
+    height: 42px;
+    border-bottom: 1px solid #0c56a7;
+    background: linear-gradient(to bottom, #144699, #092f6d);
+    font-size: 18px;
+    color: #fff;
+    line-height: 42px;
+}
+
+.electricity {
+    padding: 10px 10px 0 10px;
+}
+
+.electriLis {
+    overflow: hidden;
+    margin-left: -4%;
+}
+
+.electriLis li {
+    float: left;
+    margin-left: 4%;
+    margin-bottom: 10px;
+    height: 110px;
+    width: 46%;
+    border: 1px solid #093680;
+    background: #072b66;
+    box-shadow: 0 0 1px 0 #000;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+}
+
+.updateTime {
+    padding-top: 12px;
+    color: #96c7ff;
+    font-size: 15px;
+}
+
+.electriNum {
+    padding: 8px 0;
+    font-size: 24px;
+    color: #2bd781;
+}
+
+.electriUnit {
+    color: #fff;
+    font-size: 14px;
+}
+
+.timeDetail {
+    padding-top: 10px;
+    color: #2bd781;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.timeMins {
+    letter-spacing: 1px;
+}
+
+.enterprise {
+    padding: 0 10px;
+}
+
+.enterpriseLis li {
+    padding: 22px 6px;
+    border-bottom: 1px dashed #063a7a;
+    color: #96c7ff;
+    font-size: 16px;
+}
+
+/*【政府端】实时监测-港口-监测分析*/
+.jcCent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 296px;
+    bottom: 0;
+}
+
+.jcPop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -265px;
+    margin-left: -422px;
+    width: 870px;
+    height: 530px;
+    border: 1px solid #0c54a2;
+    box-shadow: 0 0 16px 14px #012152 inset;
+}
+
+.jcPhtit {
+    margin-left: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.closePop {
+    float: right;
+    margin-top: 15px;
+    margin-right: 4px;
+    width: 12px;
+    height: 12px;
+    background: url("../images/liz/close_jcpop.png") no-repeat;
+}
+
+.jcPopCont {
+    padding: 10px;
+}
+
+.jcPopInf {
+    margin-bottom: 10px;
+}
+
+.jcPopLis {
+    overflow: hidden;
+    margin-left: -1.3%;
+}
+
+.jcPopLis > li {
+    position: relative;
+    float: left;
+    margin-left: 1.3%;
+    height: 182px;
+    width: 32%;
+    border: 1px solid #000;
+    border-radius: 2px;
+    background: rgba(0, 29, 72, 0.8);
+    box-shadow: 0 0 1px 0 #13325d inset;
+    box-sizing: border-box;
+}
+
+.jcPopHed {
+    padding: 0 14px;
+    height: 40px;
+    border-bottom: 1px solid #000;
+    line-height: 40px;
+}
+
+.jcEnergy {
+    position: absolute;
+    top: 41px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #13325d;
+}
+
+.jcPopHlef {
+    color: #96c7ff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.jcPopHrig {
+    float: right;
+}
+
+.examLis {
+    overflow: hidden;
+}
+
+.examLis li {
+    float: left;
+    margin-left: 12px;
+    color: #b1cefc;
+    font-size: 12px;
+}
+
+.examIcon {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 1px;
+}
+
+.examIcon.bg1 {
+    background: #438bfb;
+}
+
+.examIcon.bg2 {
+    background: #7ed320;
+}
+
+.jcEnergyLef {
+    float: left;
+    padding-top: 10px;
+    width: 126px;
+    text-align: center;
+    color: #b1cefc;
+    font-size: 12px;
+}
+
+.jcEnergyRig {
+    margin-left: 126px;
+    height: 100%;
+    padding: 12px 10px 10px 6px;
+    box-sizing: border-box;
+}
+
+.jcEnergyNum {
+    color: #438bfb;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.jcEnergyUnit {
+    padding: 11px 0;
+}
+
+.jcAddIcon {
+    position: relative;
+    top: 2px;
+    margin-right: 2px;
+    display: inline-block;
+    width: 12px;
+    height: 13px;
+    background: url("../images/liz/jc_add.png") no-repeat;
+}
+
+.jcperNum {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.jcTendLis {
+    overflow: hidden;
+    margin-left: -1.5%;
+}
+
+.jcTendLis > li {
+    margin-left: 1.5%;
+    width: 48.5%;
+    height: 274px;
+}
+
+.verticalBtom {
+    padding-top: 10px;
+}
+
+.jcEnergyBtom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    border-top: 1px solid #000;
+    background: #001c45;
+}
+
+.verticalBtom img {
+    position: relative;
+    z-index: 2;
+}
+
+.jcTendChart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 230px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.jcTendLef {
+    margin-left: 20px;
+    width: 132px;
+    text-align: center;
+}
+
+.jcTendLi {
+    border-bottom: 1px dashed #073b7b;
+}
+
+.jcTendTit {
+    padding: 22px 0 14px 0;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.jcTendInf {
+    padding-bottom: 20px;
+    color: #b1cefc;
+    font-size: 12px;
+}
+
+.jcTendNum {
+    position: relative;
+    top: 2px;
+    font-size: 28px;
+    color: #438bfb;
+    font-weight: bold;
+}
+
+/*【政府端】实时监测-港口-实时监测*/
+.jcrtCont {
+    position: absolute;
+    top: 43px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+.jcrtContLi {
+    position: relative;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 2px;
+    background: rgba(0, 29, 72, 0.8);
+    box-shadow: 0 0 1px 0 #13325d inset;
+    box-sizing: border-box;
+}
+
+.jcrtContLef {
+    margin-right: 310px;
+}
+
+.jcrtContRig {
+    float: right;
+    width: 300px;
+}
+
+.police {
+    height: 140px;
+    border-top: 1px solid #243f67;
+    border-bottom: 1px solid #000;
+}
+
+.padding10 {
+    padding: 0 10px;
+}
+
+.policeTable tr td {
+    padding: 13px 0;
+    border-bottom: 1px dashed #243f67;
+    color: #96c7ff;
+    font-size: 14px;
+}
+
+.policeTable tr td:first-child {
+    color: #fff;
+    font-weight: bold;
+}
+
+.policeTable tr:last-child td {
+    border-bottom: none;
+}
+
+.chartInf {
+    position: absolute;
+    top: 183px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #193763;
+    text-align: center;
+}
+
+.chartTips {
+    position: absolute;
+    top: 116px;
+    left: 110px;
+    padding: 12px 16px;
+    width: 103px;
+    height: 72px;
+    background: url("../images/liz/ss_chartbg.png") no-repeat;
+    box-sizing: border-box;
+    z-index: 3;
+    text-align: left;
+}
+
+.offsetTit {
+    color: #b1cefc;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.offsetInf {
+    padding-top: 3px;
+    color: #438bfb;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.offsetNum {
+    font-size: 18px;
+}
+
+.paddTop14 {
+    padding-top: 14px;
+}
+
+.realTimelis {
+    overflow: hidden;
+    padding: 16px 0;
+}
+
+.realTimelis li {
+    float: left;
+    padding-top: 3px;
+    width: 33.3%;
+    height: 100px;
+    border-right: 1px dashed #1b3862;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.realTimelis li:last-child {
+    border-right: none;
+}
+
+.realTxt1 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.realTxt2 {
+    padding: 10px 0;
+    color: #438bfb;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.realTxt3 {
+    color: #b1cefc;
+    font-size: 12px;
+}
+
+/*2017/08/01新增*/
+
+/*【政府端】数据采集-数据核算*/
+.paddingBtn {
+    padding: 0 8px;
+}
+
+.collect {
+    margin: 30px;
+}
+
+.collectLis {
+    overflow: hidden;
+    margin-left: -2%;
+}
+
+.collectLis li {
+    position: relative;
+    float: left;
+    width: 23%;
+    margin-left: 2%;
+    margin-bottom: 30px;
+    height: 290px;
+    background: #fff;
+    border: 1px solid #929db0;
+    box-shadow: 0 0 8px 2px #b7c4d9;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.collectLis li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 21px;
+    height: 21px;
+    background: url("../images/wj/arrow_green.png") no-repeat;
+}
+
+.collectHed {
+    height: 59px;
+    border-bottom: 1px solid #929db0;
+    background: linear-gradient(to bottom, #fdfdfe, #f6f7fa);
+    line-height: 59px;
+}
+
+.collectTit {
+    position: relative;
+    display: inline-block;
+    color: #2a3240;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.collectCont {
+    padding-top: 24px;
+    font-weight: bold;
+}
+
+.collTime {
+    color: #5d6c85;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.collInf {
+    margin: 22px 0;
+    color: #ccd1d9;
+    font-size: 24px;
+}
+
+.collNum {
+    color: #438bfb;
+    font-size: 36px;
+}
+
+.collLine {
+    position: relative;
+    top: -3px;
+    margin: 0 6px;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.collBtn {
+    padding: 0 30px;
+    display: inline-block;
+    height: 36px;
+    border: 1px solid #ccd1d9;
+    border-radius: 1px;
+    background: linear-gradient(to bottom, #fff, #e9edf3);
+    line-height: 36px;
+    color: #5d6c85;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.collBtn:hover {
+    background: linear-gradient(to top, #fff, #e9edf3);
+}
+
+.collectTip {
+    position: absolute;
+    top: 20px;
+    right: -28px;
+    display: inline-block;
+    padding: 0 6px;
+    height: 20px;
+    line-height: 20px;
+    background: #ff9c0e;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.right_38 {
+    right: -38px;
+}
+
+.collectLis li.notAcc:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 21px;
+    height: 21px;
+    background: url("../images/wj/arrow_red.png") no-repeat;
+}
+
+.collNum.txtRed {
+    color: #ee4646;
+}
+
+.notAcc .collBtn {
+    background: linear-gradient(to bottom, #1c70f5, #134dc5);
+    color: #fff;
+}
+
+.notAcc .collBtn:hover {
+    background: linear-gradient(to top, #1c70f5, #134dc5);
+    color: #fff;
+}
+
+.paddTop24 {
+    padding-top: 24px;
+}
+
+/*填报跟踪*/
+.follow {
+    position: relative;
+    margin: 10px;
+    height: 260px;
+    background: #fff;
+    border: 1px solid #929db0;
+    border-radius: 1px;
+    box-shadow: 2px 2px 8px 2px #c4cfe0;
+}
+
+.main_unit {
+    border: 1px solid #929db0;
+    border-radius: 1px;
+    box-shadow: 2px 2px 8px 2px #c4cfe0;
+}
+
+.mtitNew {
+    border-bottom: 1px solid #929db0;
+    background: linear-gradient(to bottom, #fafafc, #ebeef3);
+}
+
+.followInf {
+    position: absolute;
+    top: 47px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.followLef {
+    float: left;
+    width: 216px;
+    height: 100%;
+    border-right: 1px solid #c9c9c9;
+    box-shadow: 2px 0 8px -1px #e7e7e7;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.follQuan {
+    padding: 56px 0 28px 0;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.follDetail {
+    font-size: 14px;
+    color: #666;
+}
+
+.follNum {
+    margin-right: 6px;
+    color: #2a6ed7;
+    font-size: 50px;
+    font-family: "Arial";
+}
+
+.followRig {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 216px;
+    bottom: 0;
+    padding: 24px 16px 0 0;
+}
+
+.followLis li {
+    position: relative;
+    float: left;
+    height: 164px;
+    width: 18%;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.followLis li.symbol {
+    width: 7%;
+    border: none;
+}
+
+.equalIcon {
+    padding-top: 66px;
+}
+
+.follTit {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    margin-left: -45px;
+    width: 90px;
+    height: 30px;
+    background: #fff;
+    color: #333;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.follChart {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 116px;
+    height: 116px;
+}
+
+.follChartInf {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 24px;
+}
+
+.follTxt1 {
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+    border-bottom: 1px dashed #d2d2d2;
+    color: #666;
+    font-size: 14px;
+}
+
+.follTxt2 {
+    font-size: 14px;
+    color: #7f7f7f;
+}
+
+.follNumsty {
+    margin-right: 4px;
+    font-size: 35px;
+    font-family: "Arial";
+}
+
+.follNumper {
+    font-size: 14px;
+}
+
+.chartcolor1 .follNumsty, .chartColor1 .follNumper {
+    color: #56bf89;
+}
+
+.chartcolor2 .follNumsty, .chartColor2 .follNumper {
+    color: #438bfb;
+}
+
+.chartcolor3 .follNumsty, .chartColor3 .follNumper {
+    color: #5d6c85;
+}
+
+.chartcolor4 .follNumsty, .chartColor4 .follNumper {
+    color: #ff9c0e;
+}
+
+.mtitNewrig {
+    float: right;
+    margin-right: 12px;
+}
+
+.mtitNewLis {
+    overflow: hidden;
+}
+
+.mtitNewLis li {
+    float: left;
+    margin-left: 14px;
+    color: #8a9099;
+    font-size: 12px;
+}
+
+.examBg1 {
+    background: #f5a93c;
+}
+
+.examBg2 {
+    background: #438bfb;
+}
+
+.examBg3 {
+    background: #5d6c85;
+}
+
+.examBg4 {
+    background: #56bf89;
+}
+
+/*任务下发new*/
+.taskNew {
+    left: 20px;
+}
+
+.taskNew .tdm_tit {
+    margin-bottom: 26px;
+}
+
+.taskNew .tdm_num {
+    margin-bottom: 38px;
+}
+
+.taskNew .taskRigLis ul li {
+    width: 23.87%;
+}
+
+.notAssue .state_did {
+    background: #ff9c0e;
+}
+
+.notAssue .btn_gray {
+    border: 1px solid #094bbb;
+    background: linear-gradient(to bottom, #1c70f4, #134dc5);
+    color: #fff;
+}
+
+.notAssue .tdm_num {
+    font-size: 14px;
+}
+
+.notAssue .num {
+    position: relative;
+    top: 2px;
+    font-size: 24px;
+    margin: 0 8px;
+}
+
+/*【政府端】决策支持-综合报告*/
+.logoZonghe {
+    margin-top: 12px;
+    width: 485px;
+    height: 37px;
+    background: url("../images/liz/zonghe_logo.png") no-repeat;
+}
+
+.hformNew {
+    border-top: 1px solid #043163;
+    border-bottom: 1px solid #053b77;
+    background: #011f4c;
+}
+
+.hformNew .formTit {
+    color: #96c7ff;
+}
+
+.hformNew .select_years {
+    border: 1px solid #1959b3;
+    background: linear-gradient(to bottom, #144698, #082e6b);
+    box-shadow: 0 0 0 1px #000;
+}
+
+.hformNew .select_years ul li span {
+    color: #96c7ff;
+    font-weight: normal;
+}
+
+.hformNew .formList .notes span {
+    color: #96c7ff;
+}
+
+.hformNew .select_years .previous {
+    background: url("../images/liz/zh_pre.png") no-repeat center;
+}
+
+.hformNew .select_years .next {
+    border-left: 1px solid #0c56a7;
+    background: url("../images/liz/zh_next.png") no-repeat center;
+}
+
+.hformNew .roll_area .active {
+    background: linear-gradient(to bottom, #1889fd, #0c64d7);
+}
+
+.hformNew .formList .active span, .hformNew .formList li:hover span {
+    background: url("../images/liz/circle_white.png") no-repeat 9px center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hformNew .btn_blue_small {
+    font-weight: normal;
+
+}
+
+.hformNew .select_years ul li span {
+    border-right: 1px solid #0c56a7;
+}
+
+.paddtop7 {
+    padding-top: 7px;
+}
+
+.mainBgblue {
+    background: #000f26;
+}
+
+.zhAnalyze {
+    border: 1px solid #0c56a7;
+    background: #001c47;
+}
+
+.zhAnalyze .tools {
+    border-bottom: 1px solid #0c56a7;
+    background: linear-gradient(to bottom, #144799, #082c68);
+}
+
+.zhAnalyze .tools .save {
+    background: url("../images/liz/zh_icon1.png") no-repeat center;
+}
+
+.zhAnalyze .tools li {
+    border-right: 1px solid #0c56a7;
+}
+
+.zhAnalyze .tools .fontSize {
+    background: url("../images/liz/zh_icon2.png") no-repeat center;
+}
+
+.zhAnalyze .tools .turns .previous {
+    background: url("../images/liz/zh_pre.png") no-repeat center;
+}
+
+.zhAnalyze .tools .turns .next {
+    background: url("../images/liz/zh_next.png") no-repeat center;
+}
+
+.zhAnalyze .tools .enlarge {
+    background: url("../images/liz/zh_icon3.png") no-repeat center;
+}
+
+.zhAnalyze .tools .reduce {
+    background: url("../images/liz/zh_icon4.png") no-repeat center;
+}
+
+.zhAnalyze .tools .print {
+    background: url("../images/liz/zh_icon5.png") no-repeat center;
+}
+
+.zhAnalyze .tools .turns .pages {
+    color: #96c7ff;
+}
+
+.zhAnalyze .tools .fullScreen {
+    background: url("../images/liz/zh_icon6.png") no-repeat center;
+}
+
+.zhAnalyze .tools .turns input {
+    background: #072b66;
+    border: 1px solid #2371c6;
+}
+
+.zhAnalyze .tools .turns input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.zhAnalyze .report_txt .cont {
+    color: #96c7ff;
+}
+
+.zhAnalyze .report_txt .cont h1 {
+    color: #96c7ff;
+}
+
+/*【政府端】能效管理-城市*/
+.energyChed {
+    border-bottom: 1px solid #051d45;
+}
+
+.nengxiaoLogo {
+    width: 485px;
+    height: 37px;
+    background: url("../images/liz/city_logo.png") no-repeat center;
+}
+
+.energyMain {
+    top: 57px;
+    border-top: 1px solid #043163;
+}
+
+.selectSty2 {
+    width: 120px;
+    height: 28px;
+    border: 1px solid #198afe;
+    background: #05285f;
+    padding: 0 6px;
+    color: #96c7ff;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: "微软雅黑";
+    outline: none;
+    box-sizing: border-box;
+}
+
+.selectSty2::-webkit-input-placeholder {
+    color: #96c7ff;
+}
+
+.colorWhite {
+    color: #fff;
+}
+
+.colorWhite::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.putNum::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.hformList {
+    margin-top: -2px;
+}
+
+.hformRig {
+    float: right;
+    margin-right: 14px;
+    color: #96c7ff;
+    font-size: 14px;
+}
+
+.monthCur {
+    color: #438bfb;
+    font-weight: bold;
+}
+
+.cityEnergyLef {
+    position: relative;
+    float: left;
+    width: 54%;
+    height: 100%;
+    border: 1px solid #0c56a7;
+    border-radius: 1px;
+    background: #072b66;
+    box-sizing: border-box;
+}
+
+.cityEnergyRig {
+    position: relative;
+    margin-left: 55%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.cityHed {
+    padding: 0 14px;
+    height: 44px;
+    border-bottom: 1px solid #0c56a7;
+    background: linear-gradient(to bottom, #144699, #082c68);
+    color: #fff;
+    font-weight: bold;
+    line-height: 44px;
+    font-size: 16px;
+}
+
+.cityCont {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.cityLi {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.cityChartHed {
+    padding: 0 14px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #000;
+}
+
+.cityCarLef {
+    float: left;
+    color: #b1cefc;
+    font-size: 12px;
+}
+
+.cityCarLefTit {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cityChartInf {
+    position: absolute;
+    top: 41px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #1d3e74;
+    padding: 16px 0;
+}
+
+.cityLiOne {
+    height: 210px;
+    border-bottom: 1px solid #000;
+}
+
+.cityLitwo {
+    position: absolute;
+    top: 210px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #1d3e74;
+}
+
+.cityInfLef {
+    float: left;
+    width: 38%;
+    height: 100%;
+    border-right: 1px dashed #204176;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.cityInfRig {
+    margin-left: 38%;
+    height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.cityNum {
+    padding-top: 16px;
+    font-family: "Century Gothic";
+    font-size: 44px;
+    font-weight: bold;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(49, 165, 252, 1)), to(rgba(0, 235, 255, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cityNumIcon {
+    position: relative;
+    top: 2px;
+    margin-right: 6px;
+    display: inline-block;
+    width: 34px;
+    height: 38px;
+    background: url("../images/liz/city_icon1.png") no-repeat;
+}
+
+.perAdd {
+    padding-top: 16px;
+    color: #96c7ff;
+    font-size: 12px;
+}
+
+.perAddIcon {
+    margin: 0 4px 0 6px;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url("../images/liz/city_icon4.png") no-repeat;
+}
+
+.perAddnum {
+    color: #2bd781;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.perAddFh {
+    color: #2bd781;
+}
+
+.cityChart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 44px;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.cityChartBtom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 43px;
+    border-top: 1px solid #1d3e74;
+    text-align: center;
+    line-height: 43px;
+}
+
+.cityExamlis {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.cityExamlis li {
+    float: left;
+    margin-right: 18px;
+    color: #b1cefc;
+    font-size: 12px;
+}
+
+.cityExamlis li:last-child {
+    margin-right: 0;
+}
+
+.cityExamIcon {
+    float: left;
+    margin-right: 6px;
+    width: 19px;
+    height: 7px;
+}
+
+.martop_3 {
+    margin-top: -3px;
+}
+
+.cityEnrigLi {
+    position: relative;
+    border: 1px solid #0c56a7;
+    border-radius: 1px;
+    background: linear-gradient(to top right, #001c47, #02255b);
+    box-shadow: 0 2px 8px 1px #041a3f;
+}
+
+.cityEnrigLiOne {
+    height: 318px;
+}
+
+.cityEnrigLiTwo {
+    position: absolute;
+    top: 328px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #042e71, #001c46);
+}
+
+.cityEnliInf {
+    padding: 12px 10px 0 10px;
+}
+
+.cityEnlis {
+    overflow: hidden;
+    margin-left: -2%;
+}
+
+.cityEnlis li {
+    float: left;
+    width: 31.3%;
+    margin-left: 2%;
+    margin-bottom: 10px;
+    padding: 10px 12px;
+    height: 120px;
+    border: 1px solid #000;
+    border-radius: 1px;
+    background: #072b66;
+    box-sizing: border-box;
+    color: #b1cefc;
+    font-size: 12px;
+}
+
+.cityEnlis .perAddnum {
+    font-size: 16px;
+}
+
+.cityEnhed {
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+.cityEnhIcon {
+    margin-top: 2px;
+    float: right;
+    display: block;
+    width: 13px;
+    height: 10px;
+    background: url("../images/liz/city_icon2.png") no-repeat;
+}
+
+.font28 {
+    font-size: 28px;
+}
+
+.orange .perAddIcon {
+    background: url("../images/liz/city_icon3.png") no-repeat;
+}
+
+.orange .perAddnum, .orange .perAddFh {
+    color: #ff6600;
+}
+
+.constractLi {
+    position: relative;
+    float: left;
+    padding: 0 10px;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.constractLi .cityChartHed {
+    padding: 0;
+}
+
+.cityChartInf.padding0 {
+    padding: 0;
+}
+
+.cityChartInf.paddingtop3 {
+    padding-top: 3px;
+    border-top: none;
+}
+
+.cityChartInf.constructInf {
+    left: 10px;
+    right: 10px;
+    padding: 6px;
+    text-align: center;
+}
+
+.consLine {
+    position: absolute;
+    top: 70px;
+    bottom: 26px;
+    left: 50%;
+    width: 1px;
+    border-right: 1px solid #1b3864;
+}
+
+.chartCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 284px;
+    height: 214px;
+    margin-top: -107px;
+    margin-left: -142px;
+}
+
+.bubblePop {
+    position: absolute;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #000;
+    box-shadow: 0 0 0 1px #1a1f28;
+    color: #b1cefc;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.bubblePop:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -7px;
+    bottom: -9px;
+    width: 14px;
+    height: 9px;
+    background: url("../images/liz/zl_tip.png") no-repeat;
+}
+
+.bubblePop1 {
+    top: 22%;
+    left: 44.5%;
+}
+
+.bubbleTxt1 {
+    margin-right: 4px;
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+    color: #fff;
+    font-weight: bold;
+}
+
+.bubbleTxt2 {
+    display: inline-block;
+    width: 32px;
+    color: #438bfb;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+}
+
+.orangeTxt {
+    color: #ff6600;
+}
+
+.greenTxt {
+    color: #28cc7d;
+}
+
+.bubbleNum {
+    position: relative;
+    top: 1px;
+    margin-right: 4px;
+    color: #ff980d;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+}
+
+.buleTxt {
+    color: #438bfb;
+}
+
+.bubblePop2 {
+    top: 40%;
+    left: 24%;
+}
+
+.bubblePop3 {
+    top: 24%;
+    right: 30%;
+}
+
+.chartDetail {
+    position: absolute;
+    top: 66px;
+    left: 74px;
+}
+
+.font30 {
+    font-size: 30px;
+}
+
+.chartUnit {
+    padding-top: 8px;
+    color: #b1cefc;
+    font-size: 12px;
+}
+
+/*能效管理-行业*/
+.hyFormLef {
+    float: left;
+    height: 100%;
+    border-right: 1px solid #000;
+    padding-right: 16px;
+}
+
+.hyFormRig {
+    margin-left: 137px;
+    height: 100%;
+    border-left: 1px solid #18335c;
+}
+
+.hyFormLis {
+    margin-top: 6px;
+}
+
+.hyFormLis li {
+    float: left;
+    padding: 0 24px;
+    height: 24px;
+    background: url("../images/liz/hy_line.png") no-repeat right 6px;
+}
+
+.hyFormLis li:last-child {
+    background: none;
+}
+
+.hyFormLi {
+    width: 100px;
+    height: 28px;
+    color: #96c7ff;
+    font-size: 14px;
+    line-height: 28px;
+    border-radius: 1px;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.active .hyFormLi, .hyFormLi:hover {
+    border: 1px solid #21b2f9;
+    background: linear-gradient(to bottom, #1887fb, #0b61d5);
+    color: #fff;
+    font-weight: bold;
+}
+
+.hyFormIcon {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+}
+
+.hyIcon1 {
+    background: url("../images/liz/hy_icon1.png") no-repeat center;
+}
+
+.hyIcon2 {
+    background: url("../images/liz/hy_icon2.png") no-repeat center;
+}
+
+.hyIcon3 {
+    background: url("../images/liz/hy_icon3.png") no-repeat center;
+}
+
+.hyIcon4 {
+    background: url("../images/liz/hy_icon4.png") no-repeat center;
+}
+
+.hyIcon5 {
+    background: url("../images/liz/hy_icon5.png") no-repeat center;
+}
+
+.hyIcon6 {
+    background: url("../images/liz/hy_icon6.png") no-repeat center;
+}
+
+.hyIcon7 {
+    background: url("../images/liz/hy_icon7.png") no-repeat center;
+}
+
+.hyIcon8 {
+    background: url("../images/liz/hy_icon8.png") no-repeat center;
+}
+
+.active .hyIcon1, .hyFormLi:hover .hyIcon1 {
+    background: url("../images/liz/hy_icon1h.png") no-repeat center;
+}
+
+.active .hyIcon2, .hyFormLi:hover .hyIcon2 {
+    background: url("../images/liz/hy_icon2h.png") no-repeat center;
+}
+
+.active .hyIcon3, .hyFormLi:hover .hyIcon3 {
+    background: url("../images/liz/hy_icon3h.png") no-repeat center;
+}
+
+.active .hyIcon4, .hyFormLi:hover .hyIcon4 {
+    background: url("../images/liz/hy_icon4h.png") no-repeat center;
+}
+
+.active .hyIcon5, .hyFormLi:hover .hyIcon5 {
+    background: url("../images/liz/hy_icon5h.png") no-repeat center;
+}
+
+.active .hyIcon6, .hyFormLi:hover .hyIcon6 {
+    background: url("../images/liz/hy_icon6h.png") no-repeat center;
+}
+
+.active .hyIcon7, .hyFormLi:hover .hyIcon7 {
+    background: url("../images/liz/hy_icon7h.png") no-repeat center;
+}
+
+.active .hyIcon8, .hyFormLi:hover .hyIcon8 {
+    background: url("../images/liz/hy_icon8h.png") no-repeat center;
+}
+
+.hyInfRig {
+    position: relative;
+    float: right;
+    width: 400px;
+    height: 100%;
+}
+
+.hyInfLef {
+    position: relative;
+    margin-right: 410px;
+    height: 100%;
+}
+
+.height280 {
+    height: 280px;
+}
+
+.hycityEnTwo {
+    position: absolute;
+    top: 290px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hyEncont {
+    position: absolute;
+    top: 41px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hyEnergy {
+    height: 100%;
+}
+
+.hyEnergy li {
+    position: relative;
+    height: 50%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.hyEnergy li:first-child {
+    border-bottom: 1px solid #000;
+}
+
+.hyEnergy li:last-child {
+    border-top: 1px solid #193a6c;
+}
+
+.cityEnhIcon.abspos {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.hyEnergyInf {
+    padding-top: 38px;
+    overflow: hidden;
+}
+
+.hyEnergyInli {
+    float: left;
+    width: 33.3%;
+}
+
+.hyTitsty {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.hyEnergyInli .cityNum {
+    padding-top: 0;
+    font-size: 46px;
+}
+
+.hyEnergyUnit {
+    color: #b1cefc;
+    font-size: 12px;
+}
+
+.martop_8 {
+    margin-top: -8px;
+}
+
+.martop14 {
+    margin-top: 14px;
+}
+
+.hyCitylis {
+    margin-top: 5px;
+    margin-left: -1%;
+}
+
+.hyCitylis li {
+    position: relative;
+    width: 24%;
+    margin-left: 1%;
+    height: 212px;
+    text-align: center;
+}
+
+.padding12 {
+    padding: 12px;
+}
+
+.hyCityInf {
+    padding-top: 26px;
+}
+
+.hyCityIcon {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.hyCitylis .cityNum {
+    font-size: 36px;
+}
+
+.unitPadding {
+    padding-top: 8px;
+}
+
+.decline {
+    background: url("../images/liz/city_icon5.png") no-repeat;
+}
+
+/*【政府端】能效管理-重点项目-能效分析*/
+.nxAnalyze {
+    position: absolute;
+    top: 14px;
+    left: 110px;
+    right: 14px;
+    bottom: 14px;
+}
+
+.nxAnalyzeLi {
+    position: relative;
+    border: 1px solid #0c56a7;
+    background: linear-gradient(to right, rgba(0, 33, 81, 0.7), rgba(4, 48, 118, 0.7));
+    box-shadow: 0 0 8px 1px #051f4a;
+}
+
+.nxAnalyzeLef {
+    float: left;
+    width: 330px;
+    height: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.nxAnalyzeRig {
+    position: relative;
+    margin-left: 344px;
+    height: 100%;
+}
+
+.nxAnalyzeLis {
+    height: 100%;
+}
+
+.nxAnalyzeLis li {
+    position: relative;
+    height: 33.3%;
+    border-bottom: 1px dashed #0c56a7;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.nxAnalyzeLis li:last-child {
+    border-bottom: none;
+}
+
+.analyzeCent {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -85px;
+    height: 170px;
+}
+
+.analyzeCent .hyTitsty {
+    font-size: 18px;
+}
+
+.analyzeCent .cityNum {
+    padding-top: 18px;
+}
+
+.analyzeCent .unitPadding {
+    padding-top: 14px;
+}
+
+.analyzeCent .perAdd {
+    padding-top: 18px;
+}
+
+.addRed {
+    position: relative;
+    top: 3px;
+    background: url("../images/liz/city_icon3.png") no-repeat;
+}
+
+.nxAddnum {
+    font-weight: bold;
+    font-size: 16px;
+    color: #b1cefc;
+    font-family: "Century Gothic";
+}
+
+.nxAnalyRli {
+    height: 49%;
+}
+
+.marbtomPer1 {
+    margin-bottom: 1%;
+}
+
+.nxAnalyRli2 {
+    position: absolute;
+    top: 51%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.nxChartRig {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -128px;
+    width: 354px;
+    height: 256px;
+    text-align: center;
+}
+
+.nxChartLef {
+    margin-right: 370px;
+    height: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.nxChartInf {
+    position: absolute;
+    top: 96px;
+    left: 80px;
+}
+
+.nxChartxt1 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nxChartInf .cityNum {
+    padding-top: 10px;
+    font-size: 32px;
+}
+
+/*【政府端】能效管理-行业-弹出*/
+.popIndus {
+    margin-left: -465px;
+    margin-top: -200px;
+    width: 930px;
+    height: 400px;
+    background: rgba(7, 37, 89, 0.5);
+    border: 1px solid #0c56a7;
+    border-radius: 1px;
+}
+
+.popIndusCont {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    padding: 12px;
+    text-align: center;
+}
+
+.popIndusBtom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 18px 0;
+    border-top: 1px solid #0c56a7;
+    background: rgba(0, 41, 103, 0.5);
+    text-align: center;
+}
+
+.popIndusBtom .examLis {
+    display: inline-block;
+}
+
+.popIndusBtom .examLis li {
+    margin-left: 18px;
+}
+
+.popIndusBtom .examLis li:first-child {
+    margin-left: 0;
+}
+
+.chaiyou {
+    background: #56bf89;
+}
+
+.yhtrq {
+    background: #ff9c0e;
+}
+
+.dian {
+    background: #e92c81;
+}
+
+.qtrl {
+    background: #8d4de8;
+}
+
+.pIndusTab {
+    position: absolute;
+    top: 12px;
+    right: 19px;
+}
+
+.pIndusTabLis {
+    overflow: hidden;
+    border: 1px solid #000;
+    border-radius: 1px;
+}
+
+.pIndusTabLis li {
+    float: left;
+    padding: 0 8px;
+    height: 24px;
+    border: 1px solid #1959b3;
+    background: linear-gradient(to bottom, #144698, #082e6b);
+    font-size: 14px;
+    color: #b1cefc;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.pIndusTabLis li.active, .pIndusTabLis li:hover {
+    border: 1px solid #1fa7fe;
+    background: linear-gradient(to bottom, #1889fd, #0d6edb);
+    color: #fff;
+    font-weight: bold;
+}
+
+/*【政府端】能效管理-企业-弹出*/
+.popL {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 4;
+}
+
+.qyPop {
+    width: 580px;
+    height: 330px;
+    margin-top: -165px;
+    margin-left: -290px;
+    background: rgba(0, 31, 76, 0.9);
+    border: 1px solid #0c56a7;
+    border-radius: 1px;
+}
+
+.qyPcont {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.qyPinfHed {
+    padding: 16px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.marig66 {
+    margin-right: 66px;
+}
+
+.qyPnum {
+    font-size: 24px;
+    color: #438bfb;
+}
+
+.qyPunit {
+    color: #b1cefc;
+    font-weight: normal;
+}
+
+.qyPinf {
+    position: relative;
+    text-align: center;
+}
+
+.bubblePop4 {
+    top: 16px;
+    left: 176px;
+    text-align: left;
+}
+
+.bubblePop4 .perAddIcon {
+    position: relative;
+    top: 2px;
+    margin: 0;
+}
+
+.bubblePop4 .perAddnum {
+    color: #b1cefc;
+    font-size: 14px;
+}
+
+.bubblePop4:before {
+    bottom: -7px;
+    background: url("../images/liz/qypop_tip.png") no-repeat;
+}
+
+/*【政府端】能效管理-重点项目-项目库维护-详细*/
+.pdfIcon {
+    display: inline-block;
+    width: 29px;
+    height: 31px;
+    background: url("../images/liz/pdf_icon.png") no-repeat;
+}
+
+.returnIcon {
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    width: 12px;
+    height: 12px;
+    background: url("../images/liz/icon-back.png") no-repeat center;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+/*【政府端】能效管理-重点项目-项目库维护-详细-弹出*/
+.pdfLef .pdfIcon {
+    background: url("../images/liz/pdf_icon2.png") no-repeat;
+}
+
+.weiPop {
+    width: 1170px;
+    height: 600px;
+    margin-top: -300px;
+    margin-left: -585px;
+    background: rgba(7, 37, 89, 0.5);
+    border: 1px solid #0c56a7;
+    border-radius: 1px;
+}
+
+.qyContLef {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    bottom: 0;
+    overflow: hidden;
+    border-right: 1px solid #000;
+    background: #072b66;
+}
+
+.qyContRig {
+    position: absolute;
+    top: 0;
+    left: 201px;
+    bottom: 0;
+    overflow: hidden;
+    border-left: 3px solid #0c56a7;
+    padding: 24px;
+    text-align: center;
+}
+
+.qyContlis {
+    border-top: 1px solid #000;
+}
+
+.qyContlis li {
+    padding: 14px 0;
+    border-top: 1px solid #093680;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.qyContlis li.active, .qyContlis li:hover {
+    background: linear-gradient(to bottom, #198aff, #0b61d4);
+}
+
+.pdfLef {
+    float: left;
+    margin-left: 14px;
+    margin-top: 5px;
+}
+
+.pdfRig {
+    margin-left: 54px;
+}
+
+.pdfRtit {
+    padding-bottom: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pdfRtime {
+    color: #b1cefc;
+    font-size: 12px;
+}
+
+.qyContTit {
+    padding-bottom: 22px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.qyContRig p {
+    padding-bottom: 26px;
+    font-size: 16px;
+    color: #96c7ff;
+    text-align: justify;
+    line-height: 28px;
+    text-indent: 32px;
+}
+
+.smallTit {
+    font-weight: bold;
+}
+
+/*项目库维护-新增*/
+.weiAddPop {
+    width: 780px;
+    height: 660px;
+    margin-top: -330px;
+    margin-left: -390px;
+    background: rgba(7, 37, 89, 0.5);
+    border: 1px solid #0c56a7;
+    border-radius: 1px;
+}
+
+.btnGroup {
+    float: right;
+    margin-right: 12px;
+}
+
+.saveBtn {
+    display: inline-block;
+    padding: 0 14px;
+    height: 26px;
+    border: 1px solid #198afe;
+    border-radius: 1px;
+    background: linear-gradient(to bottom, #198afe, #0b61d5);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.saveBtn:hover {
+    background: linear-gradient(to top, #198afe, #0b61d5);
+}
+
+.cancleBtn {
+    display: inline-block;
+    padding: 0 16px;
+    height: 26px;
+    border: 1px solid #0c56a7;
+    border-radius: 1px;
+    background: linear-gradient(to bottom, #144699, #082c68);
+    color: #fff;
+    font-size: 12px;
+    line-height: 26px;
+}
+
+.cancleBtn:hover {
+    background: linear-gradient(to top, #144699, #082c68);
+}
+
+.padChange {
+    padding: 11px 0;
+}
+
+.popInduForm {
+    margin-left: 2px;
+    margin-top: 4px;
+}
+
+.popInduFormLis {
+    padding-top: 2px;
+    border-bottom: 1px dashed #1b4e8a;
+}
+
+.popInduFormLis > li {
+    margin-bottom: 16px;
+    overflow: hidden;
+    line-height: 28px;
+}
+
+.pformList {
+    float: left;
+}
+
+.marig22 {
+    margin-right: 22px;
+}
+
+.pformTit {
+    float: left;
+    margin-right: 5px;
+    display: inline-block;
+    width: 88px;
+    font-size: 14px;
+    color: #96c7ff;
+    text-align: right;
+}
+
+.pFormput {
+    padding: 0 6px;
+    width: 272px;
+    height: 28px;
+    border: 1px solid #2371c6;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background: #072b66;
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    outline: none;
+    font-family: "微软雅黑";
+}
+
+.pFormput::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.pFormput2 {
+    color: #96c7ff;
+}
+
+.pFormput2::-webkit-input-placeholder {
+    color: #96c7ff;
+}
+
+.palceTxt {
+    color: #fff;
+    font-size: 14px;
+}
+
+.palceIcon {
+    margin-left: 6px;
+    margin-top: 6px;
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+    background: url("../images/liz/w_icon1.png") no-repeat;
+}
+
+.width150 {
+    width: 150px;
+}
+
+.marig14 {
+    margin-right: 14px;
+}
+
+.marig9 {
+    margin-right: 9px;
+}
+
+.timeSel {
+    float: left;
+    width: 272px;
+}
+
+.timePut {
+    position: relative;
+    float: left;
+    padding: 0 6px;
+    width: 122px;
+    border: 1px solid #2371c6;
+    border-radius: 2px;
+    background: #072b66;
+    height: 28px;
+    box-sizing: border-box;
+    color: #96c7ff;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: left;
+}
+
+.timeBtn {
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    right: 6px;
+    display: inline-block;
+    width: 14px;
+    height: 15px;
+    background: url("../images/liz/w_icon4.png") no-repeat;
+}
+
+.timeLine {
+    float: left;
+    margin: 0 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.pFormInlis {
+    float: left;
+}
+
+.pFormInlis li {
+    position: relative;
+    margin-right: 20px;
+    float: left;
+    width: 126px;
+    height: 60px;
+    border: 1px dashed #2371c6;
+    background: #072b66;
+    text-align: center;
+    padding: 12px 18px;
+    box-sizing: border-box;
+    color: #96c7ff;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+.pFormInlis li.active, .pFormInlis li:hover {
+    border: 1px solid #2371c6;
+}
+
+.delFile {
+    position: absolute;
+    top: 0;
+    right: -26px;
+    width: 26px;
+    height: 26px;
+    background: url("../images/liz/delbtn.png") no-repeat;
+    display: none;
+}
+
+.active .delFile, .pFormInlis li:hover .delFile {
+    display: block;
+}
+
+.pformIcon {
+    float: left;
+    width: 29px;
+    height: 31px;
+    background: url("../images/liz/pdf_icon3.png");
+}
+
+.pformTxt {
+    margin-left: 32px;
+}
+
+.process {
+    padding: 14px 0;
+}
+
+.proTableHed {
+    border: 1px solid #2371c6;
+    border-top: 2px solid #2371c6;
+    background: linear-gradient(to bottom, #144699, #082e6b);
+}
+
+.proTableHed th {
+    padding: 9px 8px;
+    border-right: 1px solid #2371c6;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #fff;
+}
+
+.proTableHed th:last-child {
+    border-right: none;
+}
+
+.proTablebody {
+    margin-top: 1px;
+    border: 1px solid #2371c6;
+}
+
+.proTablebody td {
+    padding: 10px 8px;
+    border-right: 1px solid #2371c6;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #bcdbff;
+}
+
+.editBtn {
+    display: inline-block;
+    width: 14px;
+    margin-right: 12px;
+    height: 14px;
+    background: url("../images/wy/icon9.png") no-repeat;
+}
+
+.delTdbtn {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../images/wy/icon10.png") no-repeat;
+}
+
+.addTrbg {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.addTrbtn {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../images/liz/w_icon3.png") no-repeat;
+    cursor: pointer;
+}
+
+/*【政府端】碳排控制-行业-弹出*/
+.hyPop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 850px;
+    height: 280px;
+    margin-top: -140px;
+    margin-left: -425px;
+    border: 1px solid #0c56a6;
+    border-radius: 1px;
+    background: rgba(0, 41, 103, 0.5);
+}
+
+.hyPcont {
+    top: 44px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+.hyPcontLis {
+    overflow: hidden;
+    margin-left: -1%;
+}
+
+.hyPcontLis li {
+    position: relative;
+    float: left;
+    height: 214px;
+    width: 24%;
+    margin-left: 1%;
+    border: 1px solid #000;
+    border-radius: 1px;
+    background: rgba(0, 27, 67, 0.8);
+    box-sizing: border-box;
+}
+
+.hyPcontHed {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #000;
+    padding: 0 14px;
+    color: #96c7ff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hyPcontInf {
+    position: absolute;
+    top: 41px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #19395e;
+    text-align: center;
+}
+
+.hyPtxt1 {
+    padding-top: 24px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(52, 161, 252, 1)), to(rgba(0, 235, 255, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hyPtxt2 {
+    color: #b1cefc;
+    font-size: 12px;
+    padding: 16px 0;
+}
+
+.hyPtxt3 {
+    color: #96c7ff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hyPchart {
+    position: relative;
+    margin-top: 18px;
+}
+
+.hyPtip {
+    position: absolute;
+    top: 42px;
+    left: 70px;
+}
+
+.hyPtip .cityNum {
+    padding-top: 0;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+}
+
+/*【政府端】能效管理-重点项目-项目监管*/
+.supervise {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    bottom: 12px;
+    left: 108px;
+    border: 1px solid #0c56a7;
+    border-radius: 2px;
+    background: rgba(0, 41, 103, 0.5);
+}
+
+.hyEncont.top45 {
+    top: 45px;
+}
+
+.fontNormal {
+    font-weight: normal;
+}
+
+.superToplis {
+    overflow: hidden;
+    margin-left: -0.7%;
+}
+
+.superToplis li {
+    position: relative;
+    float: left;
+    margin-left: 0.7%;
+    width: 24.3%;
+    height: 96px;
+    border: 1px solid #0c56a7;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #184399, #1b3485);
+}
+
+.superInner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -32px;
+    margin-left: -112px;
+    width: 224px;
+    height: 64px;
+}
+
+.superIcon {
+    float: left;
+    width: 64px;
+    height: 64px;
+}
+
+.superRig {
+    margin-left: 96px;
+}
+
+.superTit {
+    padding: 2px 0 6px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.superNum {
+    font-size: 30px;
+    color: #2bd781;
+    font-family: "Century Gothic";
+}
+
+.superUnit {
+    font-size: 14px;
+    color: #b1cefc;
+}
+
+.marig6 {
+    margin-right: 6px;
+}
+
+.superMain {
+    position: absolute;
+    top: 120px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+}
+
+.superMlis {
+    height: 100%;
+    margin-left: -0.6%;
+}
+
+.superMlis > li {
+    position: relative;
+    float: left;
+    width: 13.683%;
+    height: 100%;
+    margin-left: 0.6%;
+    border: 1px solid #000;
+    background: #002560;
+    box-sizing: border-box;
+}
+
+.superMlis > li:hover, .superMlis > li.active {
+    background: linear-gradient(to bottom, #1a46a0, #1c3c93, #1d3588);
+}
+
+.superInLis {
+    height: 100%;
+}
+
+.superInLis li {
+    position: relative;
+    height: 18%;
+    border-top: 1px solid #2d51a3;
+    color: #b1cefc;
+    font-size: 14px;
+    border-bottom: 1px solid #151925;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.superInLis li:last-child {
+    border-bottom: none;
+}
+
+.superInLis li:first-child {
+    height: 28%;
+    background: #00317a;
+}
+
+.superIncent {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -57px;
+    height: 114px;
+}
+
+.superInIcon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+}
+
+.superInIcon1 {
+    background: url("../images/liz/pro_icon5.png") no-repeat;
+}
+
+.superInIcon2 {
+    background: url("../images/liz/pro_icon6.png") no-repeat;
+}
+
+.superInIcon3 {
+    background: url("../images/liz/pro_icon7.png") no-repeat;
+}
+
+.superInIcon4 {
+    background: url("../images/liz/pro_icon8.png") no-repeat;
+}
+
+.superInIcon5 {
+    background: url("../images/liz/pro_icon9.png") no-repeat;
+}
+
+.superInIcon6 {
+    background: url("../images/liz/pro_icon10.png") no-repeat;
+}
+
+.superInIcon7 {
+    background: url("../images/liz/pro_icon11.png") no-repeat;
+}
+
+.active .superInIcon1, .superMlis > li:hover .superInIcon1 {
+    background: url("../images/liz/pro_icon5h.png") no-repeat;
+}
+
+.active .superInIcon2, .superMlis > li:hover .superInIcon2 {
+    background: url("../images/liz/pro_icon6h.png") no-repeat;
+}
+
+.active .superInIcon3, .superMlis > li:hover .superInIcon3 {
+    background: url("../images/liz/pro_icon7h.png") no-repeat;
+}
+
+.active .superInIcon4, .superMlis > li:hover .superInIcon4 {
+    background: url("../images/liz/pro_icon8h.png") no-repeat;
+}
+
+.active .superInIcon5, .superMlis > li:hover .superInIcon5 {
+    background: url("../images/liz/pro_icon9h.png") no-repeat;
+}
+
+.active .superInIcon6, .superMlis > li:hover .superInIcon6 {
+    background: url("../images/liz/pro_icon10h.png") no-repeat;
+}
+
+.active .superInIcon7, .superMlis > li:hover .superInIcon7 {
+    background: url("../images/liz/pro_icon11h.png") no-repeat;
+}
+
+.active .superInLis li:first-child, .superMlis > li:hover .superInLis li:first-child {
+    background: linear-gradient(to bottom, #1a46a0, #1b429b);
+}
+
+.superliCent {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -36px;
+    height: 76px;
+}
+
+.superIntxt {
+    padding-top: 8px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.superInnum {
+    padding: 2px 0;
+    font-size: 24px;
+    color: #2bd781;
+}
