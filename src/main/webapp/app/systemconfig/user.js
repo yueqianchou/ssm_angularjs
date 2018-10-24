@@ -12,7 +12,7 @@
 var userInfo = getCurrentUser();*/
 
 
-/*以下用户登录使用不删除*/
+/*以下用户登录使用不删 除*/
 var getCurrentUser=function () {
     var url='getCurrentUserInfo';
     var responseDate=$.ajax({
