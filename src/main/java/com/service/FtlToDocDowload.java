@@ -1,6 +1,7 @@
-package com.controller;
+package com.service;
 
 import com.alibaba.fastjson.JSONObject;
+import com.controller.TestController;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
 import org.slf4j.Logger;

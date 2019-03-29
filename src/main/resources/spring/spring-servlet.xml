@@ -86,7 +86,7 @@
 		</property>
 	</bean>
 
-	<!--ftl转doc-->
+	<!--ftl转doc 导出word需要配置-->
 	<bean  id="freeMarkerConfigurer" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
 		<property name="templateLoaderPath" value="classpath:file/ftl"></property>
 		<property name="freemarkerSettings">
