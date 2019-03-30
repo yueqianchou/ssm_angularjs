@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.StudentMapper">
+    
+    <resultMap type="com.entity.Student" id="StudentResult">
+        <result property="id"    column="id"    />
+        <result property="name"    column="name"    />
+        <result property="age"    column="age"    />
+        <result property="phone"    column="phone"    />
+    </resultMap>
+	
+	<sql id="selectStudentVo">
+        select id, name, age, phone from student
+    </sql>
+	
+    <select id="selectStudentList" parameterType="com.entity.Student" resultMap="StudentResult">
+        <include refid="selectStudentVo"/>
+        <where>  
+            <if test="id != null "> and id = #{id}</if>
+             <if test="name != null  and name != '' "> and name = #{name}</if>
+             <if test="age != null "> and age = #{age}</if>
+             <if test="phone != null  and phone != '' "> and phone = #{phone}</if>
+         </where>
+    </select>
+    
+    <select id="selectStudentById" parameterType="Integer" resultMap="StudentResult">
+        <include refid="selectStudentVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertStudent" parameterType="com.entity.Student" useGeneratedKeys="true" keyProperty="id">
+        insert into student
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="name != null  and name != ''  ">name,</if>
+			<if test="age != null  ">age,</if>
+			<if test="phone != null  and phone != ''  ">phone,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="name != null  and name != ''  ">#{name},</if>
+			<if test="age != null  ">#{age},</if>
+			<if test="phone != null  and phone != ''  ">#{phone},</if>
+         </trim>
+    </insert>
+	 
+    <update id="updateStudent" parameterType="com.entity.Student">
+        update student
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="name != null  and name != ''  ">name = #{name},</if>
+            <if test="age != null  ">age = #{age},</if>
+            <if test="phone != null  and phone != ''  ">phone = #{phone},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+	<delete id="deleteStudentById" parameterType="Integer">
+        delete from student where id = #{id}
+    </delete>
+	
+    <delete id="deleteStudentByIds" parameterType="String">
+        delete from student where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+</mapper>
